@@ -1,0 +1,66 @@
+"According to INCOSE (2019), Systems Engineering is a transdisciplinary and integrative approach used to enable the successful realization, use, and retirement of _____.",engineered systems
+"The Systems Engineering perspective is based on _____ thinking, which views a system as a whole rather than just a collection of parts.",systems
+"Systems Engineering has the responsibility to realize systems that are '_____', meaning they accomplish intended purposes and are resilient in real-world operation.",fit for purpose
+"According to Griffin (2010), a primary responsibility of SE is to minimize unintended actions, side effects, and _____.",consequences
+One measure of the utility of SE activities is the degree to which _____ is reduced.,risk
+Concept: System (Ludwig von Bertalanffy),Definition: A 'whole' consisting of interacting 'parts'.
+"According to ISO/IEC/IEEE 15288, a system is an arrangement of parts or elements that together exhibit behavior or meaning that the _____ do not.",individual constituents
+"The interpretation of a system's meaning is often clarified using an associative _____, such as 'medical' in 'medical system'.",noun
+"A complete system includes equipment, facilities, material, computer programs, firmware, technical documentation, services, and _____.",personnel
+Systems in the physical universe are composed of matter and energy and exhibit _____.,observable behavior
+"Unlike physical systems, conceptual systems are abstract systems of pure information that exhibit '_____'.",meaning
+Term: Engineered System,Definition: A system designed or adapted to interact with an anticipated operational environment to achieve one or more intended purposes while complying with applicable constraints.
+"In the early 1940s, the term 'systems engineering' was first used by _____.",Bell Telephone Laboratories
+Which professional society for SE was founded in 1990 and later became the International Council on Systems Engineering (INCOSE)?,The National Council on Systems Engineering (NCOSE)
+What is the title of the international standard ISO/IEC/IEEE 15288?,Systems and software engineering—System life cycle processes
+What is the purpose of ISO/IEC/IEEE 42010?,Systems and software engineering—Architecture description
+"According to Figure 1.1, the time for a product to penetrate $25\%$ of the market has been reduced by more than a factor of _____ between 1880 and 2000.",4
+The acronym MBSE stands for _____.,Model Based Systems Engineering
+"According to the 2013 study by Honour, the optimum level of SE effort for a project is typically between _____ of the total project cost.",$10\%$ to $14\%$
+"At the median level of projects interviewed by Honour (2013), additional SE effort carries an ROI of _____.",$3.5:1$
+"According to Figure 1.4, by the time approximately $20\%$ of actual costs have been accrued, over _____ of the total Life Cycle Cost (LCC) has already been typically committed.",$80\%$
+Early identification of issues is critical because it is less costly to fix issues during the _____ and _____ phases than during production.,concept; development
+The collection of elements that do not belong to the system but do interact with it is called the _____.,system environment (or context)
+Term: System Boundary,Definition: A 'line of demarcation' between the system under consideration (System of Interest) and its greater context.
+"In SE, the _____ of a system is expressed in terms of the interactions of the system with its operating environment, especially the users.",functionality
+Concept: System Architecture (ISO/IEC/IEEE 42020),Definition: Fundamental concepts or properties of an entity in its environment and governing principles for the realization and evolution of this entity and its related life cycle processes.
+An observable characteristic or property of a system is called an _____.,attribute
+Term: System State,Definition: The condition of a system when the values assigned to its attributes remain constant or steady for a meaningful period of time.
+The time evolution of the system state is referred to as _____.,dynamic behavior
+Term: Emergence,Definition: The phenomenon where whole entities exhibit meaningful properties that are not present in their individual parts.
+"In a _____ box representation, the system is viewed from the outside via its attributes, while a _____ box representation is based on an internal view of the system.",black (opaque); white (transparent)
+"Systems that share a physical, material, or data interface with the System of Interest (SoI) throughout its life cycle are called _____.",interfacing systems
+Term: Interoperating Systems,Definition: Interfacing systems that interact with the System of Interest (SoI) in its operational environment to perform a function that supports the SoI's primary purpose.
+Term: Enabling Systems,Definition: External systems that facilitate the life cycle activities of the System of Interest (SoI) but are not a direct element of its operational environment.
+"In the System Innovation Ecosystem Pattern, 'System 1' refers to the _____.",Engineered System
+"In the System Innovation Ecosystem Pattern, 'System 2' refers to the _____.",Life Cycle Project Management System
+"In the System Innovation Ecosystem Pattern, 'System 3' refers to the _____.",Enterprise Process and Innovation System
+A discrete part of a system that can be implemented to fulfill specified requirements is called a system _____.,element
+What organizational representation of system structure is used to define the relationship between system elements and their integration?,Product Breakdown Structure (PBS)
+Urwick (1956) and Miller (1956) suggested that the decomposition of any object in a hierarchy should be limited to no more than _____ subordinate elements.,$7 \pm 2$
+The _____ view of the system hierarchy refers to how system elements at a given architecture level relate to one another.,horizontal
+Term: System Mode,Definition: A distinct operating capability of the system during which some or all of the system's functions may be performed to a full or limited degree.
+"In SE, a _____ system has elements where the relationship between states is reducible, predictable, and comprehensible.",complicated
+"In SE, a _____ system has elements where the relationship between states is not fully comprehended, leading to insufficient certainty between cause and effect.",complex
+Term: Epistemic Uncertainty,Definition: Uncertainty due to a lack of knowledge about the system or how it will perform.
+Term: Aleatory Uncertainty,"Definition: Uncertainty due to inherent randomness in a technology, system, or process."
+"According to Table 1.4, changes in political viewpoints, economic disruptions, or disruptive technologies are sources of _____ uncertainty.",Business
+"According to Table 1.4, technology maturity and changes in missions are potential uncertainties for _____ costs.",Development and Production
+Cognitive Bias: Framing,Definition: The way a question or decision is described influences the response.
+Cognitive Bias: Representativeness,Definition: Drawing conclusions based on representative characteristics while ignoring relevant facts or base rates.
+Cognitive Bias: Anchoring,Definition: Allowing an initial estimate to disproportionately affect final estimates.
+Cognitive Bias: Availability,"Definition: Placing too much weight on information that is vivid, striking, or recent."
+Cognitive Bias: Confirmation,Definition: Seeking or overweighting data that confirms existing beliefs.
+Term: Group Think,Definition: A group of people making irrational decisions to suppress dissent and maintain group harmony.
+Term: Rankism,Definition: The assumption that a person of higher rank is always correct in their decisions.
+What aviation industry method makes all crew members responsible for warning the pilot of imminent danger to mitigate cognitive biases?,Crew Resource Management (CRM)
+SE Principle 5 states that the _____ is the perfect representation of the system.,real system
+"SE Principle 2 states that SE has a _____ system view that includes system elements, interactions, enabling systems, and the environment.",holistic
+Term: Heuristic,Definition: A 'rule of thumb' or mental shortcut based on practical experience used to provide guidance on professional conduct or decision-making.
+Which SE heuristic warns that strong relationships with stakeholders are needed because the initial problem statement may not be the right one?,"Don't assume that the original statement of the problem is necessarily the best, or even the right one."
+Which SE heuristic emphasizes that system science postulates that the only complete model of the system in its environment is the system itself?,"Model before build, wherever possible."
+"The DSRP model of systems thinking stands for Distinctions, Systems, Relationships, and _____.",Perspectives
+Concept: Critical Systems Thinking (CST),"Definition: A multi-perspectival, multi-methodological, and multi-method approach used to address complex problem situations."
+"In Systems Science, _____ modeling focuses on the behavior of whole systems in terms of the rules of interaction of the individual 'agents' that constitute the system.",agent-based
+"The study of general systems focuses on principles such as progressive differentiation, mechanization, and _____, which means reaching the same final state from different initial conditions.",equifinality
+"According to Jackson (2019), the SOSM framework for classifying systems methodologies stands for _____.",System of Systems Methodologies
