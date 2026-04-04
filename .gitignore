@@ -54,3 +54,7 @@ npm-debug.log*
 .idea/
 *.suo
 *.user
+
+# ─── Dissolved Nested Repos ──────────────────────────────────────────────────
+# Renamed .git folders from dissolved nested repositories — safe to ignore.
+**/.git_dissolved/
