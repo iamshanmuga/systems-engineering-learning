@@ -10,14 +10,25 @@
 ```
 CSEP_Study_Plan/
 ├── README.md                          ← This file (project index)
+├── Weekly_Content_Checklist_and_Prompts.md  ← Master checklist + reusable prompts for generating each week's materials
 ├── Week_01/
 │   ├── Week_01_Study_Plan.md          ← Daily schedule & learning objectives (7 days)
 │   ├── Week_01_Topic_Summaries.md     ← Concise summaries for all 6 topic areas
 │   ├── Week_01_Flashcards.md          ← 160-card exam-focused flashcard deck
 │   ├── Week_01_Audio_Overview_Scripts.md ← 7 podcast-style audio overview scripts
 │   └── Week_01_References.md          ← Standards, textbooks, and free resources
-├── Week_02/                           ← (Coming next)
-├── Week_03/                           ← (Coming next)
+├── Week_02/
+│   ├── Week_02_Study_Plan.md          ← Daily schedule & learning objectives (7 days)
+│   ├── Week_02_Topic_Summaries.md     ← Concise summaries for all 6 topic areas
+│   ├── Week_02_Flashcards.md          ← 55-card exam-focused flashcard deck
+│   ├── Week_02_Flashcards.csv         ← Anki/Quizlet import CSV
+│   ├── Week_02_Flashcards_NotebookLM.csv ← NotebookLM ingestion CSV
+│   ├── Week_02_Audio_Overview_Scripts.md ← 7 podcast-style audio overview scripts
+│   ├── Week_02_References.md          ← Standards, textbooks, and free resources
+│   ├── Week_02_Practice_Questions.md  ← 20 CSEP-style practice MCQs with answer key
+│   ├── Week_02_Assessment_Answers.md  ← Day 1–6 self-check answers & brain dump key
+│   └── Week_02_NotebookLM_Steps.md   ← Manual checklist for mind map, audio & video
+├── Week_03/                           ← (Scheduled — Monday 2026-04-20)
 └── ...
 ```
 
@@ -28,7 +39,7 @@ CSEP_Study_Plan/
 | Week | Chapter Focus | Theme | Est. Hours | Status |
 |------|--------------|-------|-----------|--------|
 | **Week 1** | CH01 | SE Overview & Fundamentals | 4 | ✅ Complete |
-| Week 2 | CH02 | Life Cycle Concepts | 4 | 🔲 Pending |
+| Week 2 | CH02 | Life Cycle Concepts | 4 | 🔄 In Progress |
 | Week 3–4 | CH03 | Technical Processes — Part 1 (Stakeholder Needs → Architecture) | 6 | 🔲 Pending |
 | Week 5–6 | CH03 | Technical Processes — Part 2 (Design → Disposal) | 6 | 🔲 Pending |
 | Week 7 | CH04 | Technical Management Processes | 5 | 🔲 Pending |
