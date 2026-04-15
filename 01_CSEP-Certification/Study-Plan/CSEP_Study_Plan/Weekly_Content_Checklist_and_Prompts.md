@@ -48,6 +48,8 @@ All deliverables for a given week go under:
 | Video overview (NotebookLM) | `Week_XX_Video_Overview.mp4` |
 | Practice questions (exam-style MCQ) | `Week_XX_Practice_Questions.md` |
 | Week assessment / brain dump answer key | `Week_XX_Assessment_Answers.md` |
+| Illustration diagram prompts (one per topic summary) | `Week_XX_Illustration_Diagram_Prompts.md` |
+| Generated illustration diagrams (Mermaid/SVG/PNG) | `Week_XX_Diagrams/` (folder, one file per summary: `Week_XX_Diagram_<n>_<slug>.{mmd,svg,png}`) |
 
 ---
 
@@ -58,6 +60,7 @@ Tick each item once produced and saved to `Week_XX/`.
 ### Core study materials
 - [ ] **Study Plan** — day-by-day 7-day schedule with objectives, activities, key-term tables, self-check questions, and competency checklist. [Use Prompt 1]
 - [ ] **Topic Summaries** — concise exam-focused written summaries (one per subject area). [Use Prompt 2]
+- [ ] **Illustration Diagram Prompts** — one image-generation prompt per topic summary (where a diagram usefully reinforces the concept), plus rendered diagrams. [Use Prompt 12]
 - [ ] **Flashcards (Markdown)** — 40–60 Q&A flashcards organised by sub-topic, with legend for ✅/🔄/❌. [Use Prompt 3]
 - [ ] **Flashcards (CSV)** — CSV export suitable for Anki/Quizlet import. [Use Prompt 4a]
 - [ ] **Flashcards (NotebookLM CSV)** — CSV formatted for NotebookLM ingestion. [Use Prompt 4b]
@@ -159,6 +162,11 @@ For each summary include:
 - Key terminology in **bold** on first use
 - One Markdown definition or comparison table if appropriate
 - A final "CSEP Exam Tip:" sentence highlighting what examiners emphasise
+- A "Suggested Illustration:" block (1–2 sentences) describing the diagram type that would best
+  reinforce this summary (e.g. process flow, context diagram, V-model, block diagram, state
+  machine, concept map) and the 3–6 key elements/labels it must contain. If a diagram would add
+  no pedagogical value for this particular summary, write "Suggested Illustration: N/A — text only"
+  and briefly explain why. These blocks are the direct inputs to Prompt 12.
 
 Rules:
 - Cite SEH5 chapter/section numbers inline (e.g. "SEH5 §6.4.3").
@@ -467,23 +475,109 @@ Rules:
 
 ---
 
+### Prompt 12 — Illustration Diagram Prompts (`Week_XX_Illustration_Diagram_Prompts.md`)
+
+**Purpose:** For every topic summary produced by Prompt 2 that is marked with a non-N/A
+"Suggested Illustration:" block, generate a self-contained image-generation prompt that can
+be pasted into an image/diagram tool (Mermaid Live Editor, draw.io, PlantUML, Whimsical, or
+an AI image generator such as the ones in ChatGPT / Claude / Gemini) to render the diagram.
+
+```
+You are producing a set of diagram-generation prompts for Week {{WEEK_NUMBER}} —
+{{WEEK_TOPIC}} of the CSEP study programme.
+
+Input: Week_{{WEEK_NUMBER}}_Topic_Summaries.md (already produced). Read each summary's
+"Suggested Illustration:" block.
+
+For EACH summary whose "Suggested Illustration" is NOT marked "N/A — text only", produce
+one entry in a single Markdown file with this exact structure:
+
+## Diagram {{N}} — <summary title>
+
+**Linked summary:** Summary N in Week_{{WEEK_NUMBER}}_Topic_Summaries.md
+**Output filename:** `Week_{{WEEK_NUMBER}}_Diagrams/Week_{{WEEK_NUMBER}}_Diagram_{{N}}_<slug>.mmd`
+(for Mermaid) or `.svg`/`.png` (for raster tools)
+**Recommended tool:** Mermaid (preferred for process/flow/state), PlantUML (UML), draw.io
+(context/block diagrams), or an AI image generator (conceptual illustrations only — not
+for formal SE diagrams).
+**Standards reference:** SEH5 §… / ISO 15288 §… that the diagram must be consistent with.
+
+### Mermaid source (if applicable)
+```mermaid
+<a complete, copy-pastable Mermaid diagram that renders the concept>
+```
+
+### Alternative: natural-language prompt for an AI image generator
+> <self-contained paragraph, 80–150 words, describing the exact diagram to render:
+> layout, labelled nodes, arrows/relationships, colour hints (neutral/technical palette),
+> style ("clean, textbook-style, flat vector, high-contrast labels, UK English spelling"),
+> aspect ratio, and any terminology that must appear verbatim from INCOSE / ISO 15288.>
+
+### What the diagram MUST show
+- <bullet list of 3–6 mandatory elements/labels>
+- <include INCOSE / ISO definitions verbatim where the label is a formal term>
+
+### What the diagram MUST NOT show
+- <things that would introduce non-standard or out-of-scope concepts, e.g. vendor logos,
+  artistic embellishment, fabricated process steps>
+
+### Exam relevance
+One sentence linking the diagram to the CSEP exam objective it supports.
+
+---
+
+Repeat the block above for every eligible summary, numbered 1..N in the same order as the
+summaries appear in Week_{{WEEK_NUMBER}}_Topic_Summaries.md. If the student chooses to
+generate a diagram, the rendered file goes into `Week_{{WEEK_NUMBER}}_Diagrams/` using the
+filename specified in that entry.
+
+Rules:
+- Prefer Mermaid first — it versions cleanly in git and renders on GitHub natively. Only
+  fall back to AI image generation for conceptual illustrations that cannot be expressed
+  as boxes-and-arrows (e.g. a metaphorical "iceberg" systems-thinking diagram).
+- Do NOT invent process steps, standards, or terminology. If the Topic Summary cites SEH5
+  §6.4.3, the diagram must use exactly the process names from that section.
+- Use UK English on every label.
+- Every diagram prompt must be standalone — no "see Diagram 2" cross-references.
+- Match the style of the most recent Week_XX_Illustration_Diagram_Prompts.md that exists
+  in the repo (if none exist yet, establish the template with Week {{WEEK_NUMBER}}).
+```
+
+**Rendering step (manual, after the prompt file is produced):**
+1. Create the folder `Week_{{WEEK_NUMBER}}_Diagrams/`.
+2. For each Mermaid entry, save the fenced block as a `.mmd` file using the specified
+   filename, then render to `.svg` via `mmdc -i <file>.mmd -o <file>.svg` (mermaid-cli)
+   or paste into <https://mermaid.live> and export SVG/PNG.
+3. For AI-image entries, paste the natural-language prompt into the chosen image generator,
+   download the result, and save with the specified filename.
+4. Commit both the `.mmd` source and the rendered `.svg`/`.png` — the source is the source
+   of truth; the raster is for embedding in slides.
+
+---
+
 ## Scheduled-Task Execution Plan
 
 When scheduling a weekly content-generation task, follow this sequence (dependencies in
 order — each step feeds the next):
 
 1. **Run Prompt 1** → produces `Week_XX_Study_Plan.md`
-2. **Run Prompt 2** → produces `Week_XX_Topic_Summaries.md`
+2. **Run Prompt 2** → produces `Week_XX_Topic_Summaries.md` (each summary includes a
+   "Suggested Illustration:" block — the input to Prompt 12)
 3. **Run Prompt 3** → produces `Week_XX_Flashcards.md` *(depends on 1 & 2)*
 4. **Run Prompts 4a & 4b** (in parallel) → produce both CSVs *(depend on 3)*
 5. **Run Prompt 5** → produces `Week_XX_Audio_Overview_Scripts.md` *(depends on 1 & 2)*
 6. **Run Prompt 6** → produces `Week_XX_References.md`
 7. **Run Prompt 7** → produces `Week_XX_Practice_Questions.md` *(depends on 1, 2, 3)*
 8. **Run Prompt 10** → produces `Week_XX_Assessment_Answers.md` *(depends on 1)*
-9. **Manual — NotebookLM:** upload outputs from steps 1–7, then run Prompts 8, 9 & 11
-   to produce the mind map PNG, audio overview m4a, and video overview mp4.
-10. **Manual:** update `01_CSEP-Certification/README.md` progress tracker.
-11. **Manual — Git:** create feature branch `content/week-XX`, commit all files, open PR
+9. **Run Prompt 12** → produces `Week_XX_Illustration_Diagram_Prompts.md` *(depends on 2)*
+10. **Manual — Render diagrams:** for each entry in the Illustration Diagram Prompts file,
+    render to `Week_XX_Diagrams/` (Mermaid via `mmdc` or mermaid.live; AI images via chosen
+    generator). Commit both source (`.mmd`) and rendered (`.svg`/`.png`).
+11. **Manual — NotebookLM:** upload outputs from steps 1–7 (and the rendered diagrams from
+    step 10 for richer visual context), then run Prompts 8, 9 & 11 to produce the mind map
+    PNG, audio overview m4a, and video overview mp4.
+12. **Manual:** update `01_CSEP-Certification/README.md` progress tracker.
+13. **Manual — Git:** create feature branch `content/week-XX`, commit all files, open PR
     targeting `main`. (Per repo rule: never commit directly to `main`.)
 
 ---

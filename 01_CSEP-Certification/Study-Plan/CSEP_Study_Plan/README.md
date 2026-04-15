@@ -29,6 +29,8 @@ CSEP_Study_Plan/
 │   ├── Week_02_Assessment_Answers.md  ← Day 1–6 self-check answers & brain dump key
 │   └── Week_02_NotebookLM_Steps.md   ← Manual checklist for mind map, audio & video
 ├── Week_03/                           ← (Scheduled — Monday 2026-04-20)
+│   ├── Week_03_Illustration_Diagram_Prompts.md  ← (New from Week 3 onward) Per-summary image-gen prompts
+│   └── Week_03_Diagrams/                        ← (New from Week 3 onward) Rendered Mermaid / SVG / PNG diagrams
 └── ...
 ```
 
