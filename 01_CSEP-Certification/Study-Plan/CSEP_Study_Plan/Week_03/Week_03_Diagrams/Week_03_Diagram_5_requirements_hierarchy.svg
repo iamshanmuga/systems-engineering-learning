@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1150" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <style>
+    .title { font-size: 22px; font-weight: bold; fill: #1A202C; }
+    .level-label { font-size: 15px; font-weight: bold; fill: #1A202C; }
+    .example { font-size: 12px; font-style: italic; fill: #2D3748; }
+    .produced { font-size: 12px; fill: #2D3748; font-weight: 600; }
+    .stakeholder-box { fill: #FFF5F5; stroke: #C53030; stroke-width: 1.5; rx: 8; ry: 8; }
+    .engineering-box { fill: #E8F1FA; stroke: #2B6CB0; stroke-width: 1.5; rx: 8; ry: 8; }
+    .section-header { font-size: 14px; font-weight: bold; fill: #1A202C; }
+    .arrow-forward { stroke: #2D3748; stroke-width: 2; fill: none; }
+    .arrow-trace { stroke: #718096; stroke-width: 1.5; fill: none; stroke-dasharray: 5,3; }
+    .arrow-label { font-size: 11px; fill: #2D3748; font-style: italic; font-weight: 600; }
+    .foot { font-size: 11px; fill: #4A5568; font-style: italic; }
+    .band-stakeholder { fill: #FED7D7; opacity: 0.25; }
+    .band-engineering { fill: #BEE3F8; opacity: 0.25; }
+  </style>
+
+  <text x="550" y="32" text-anchor="middle" class="title">The Six-Level Requirements Hierarchy</text>
+
+  <defs>
+    <marker id="ah5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2D3748"/>
+    </marker>
+    <marker id="ah5t" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#718096"/>
+    </marker>
+  </defs>
+
+  <!-- Bands -->
+  <rect x="130" y="70"  width="840" height="510" class="band-stakeholder"/>
+  <text x="160" y="95" class="section-header" fill="#742A2A">STAKEHOLDER-FACING LEVELS (Problem Space)</text>
+
+  <rect x="130" y="600" width="840" height="510" class="band-engineering"/>
+  <text x="160" y="625" class="section-header" fill="#2A4365">ENGINEERING-FACING LEVELS (Solution Space)</text>
+
+  <!-- Level 1 -->
+  <rect x="180" y="115" width="740" height="130" class="stakeholder-box"/>
+  <text x="210" y="145" class="level-label">1 — Business / Mission Need</text>
+  <text x="210" y="175" class="example">Example: reduce mission planning time by 50%</text>
+  <text x="210" y="215" class="produced">Produced by: BMA (ISO 15288 §6.4.1)</text>
+
+  <!-- Level 2 -->
+  <rect x="180" y="270" width="740" height="130" class="stakeholder-box"/>
+  <text x="210" y="300" class="level-label">2 — Stakeholder Need</text>
+  <text x="210" y="330" class="example">Example: planners want faster scenario iteration</text>
+  <text x="210" y="370" class="produced">Produced by: SN&amp;RD (ISO 15288 §6.4.2)</text>
+
+  <!-- Level 3 -->
+  <rect x="180" y="425" width="740" height="140" class="stakeholder-box"/>
+  <text x="210" y="455" class="level-label">3 — Stakeholder Requirement</text>
+  <text x="210" y="485" class="example">Example: the system shall generate a mission plan</text>
+  <text x="210" y="505" class="example">within 10 min of new intelligence input</text>
+  <text x="210" y="545" class="produced">Produced by: SN&amp;RD (ISO 15288 §6.4.2)</text>
+
+  <!-- Level 4 -->
+  <rect x="180" y="645" width="740" height="140" class="engineering-box"/>
+  <text x="210" y="675" class="level-label">4 — System Requirement</text>
+  <text x="210" y="705" class="example">Example: the planning service shall process 1 000 way-points</text>
+  <text x="210" y="725" class="example">in &lt; 5 s at the 99th percentile</text>
+  <text x="210" y="765" class="produced">Produced by: System Requirements Definition (§6.4.3)</text>
+
+  <!-- Level 5 -->
+  <rect x="180" y="810" width="740" height="140" class="engineering-box"/>
+  <text x="210" y="840" class="level-label">5 — Subsystem / Element Requirement</text>
+  <text x="210" y="870" class="example">Example: the route-optimisation module shall return</text>
+  <text x="210" y="890" class="example">a candidate path in &lt; 500 ms</text>
+  <text x="210" y="930" class="produced">Produced by: Architecture Definition (§6.4.4)</text>
+
+  <!-- Level 6 -->
+  <rect x="180" y="975" width="740" height="130" class="engineering-box"/>
+  <text x="210" y="1005" class="level-label">6 — Component / Implementation Requirement</text>
+  <text x="210" y="1035" class="example">Example: the cache shall use LRU eviction with 10 000-entry capacity</text>
+  <text x="210" y="1075" class="produced">Produced by: Design Definition (§6.4.5)</text>
+
+  <!-- Forward arrows (derives to) -->
+  <line x1="450" y1="245" x2="450" y2="270" class="arrow-forward" marker-end="url(#ah5)"/>
+  <line x1="450" y1="400" x2="450" y2="425" class="arrow-forward" marker-end="url(#ah5)"/>
+  <line x1="450" y1="565" x2="450" y2="645" class="arrow-forward" marker-end="url(#ah5)"/>
+  <line x1="450" y1="785" x2="450" y2="810" class="arrow-forward" marker-end="url(#ah5)"/>
+  <line x1="450" y1="950" x2="450" y2="975" class="arrow-forward" marker-end="url(#ah5)"/>
+
+  <!-- Backward (trace) arrows -->
+  <line x1="650" y1="270" x2="650" y2="245" class="arrow-trace" marker-end="url(#ah5t)"/>
+  <line x1="650" y1="425" x2="650" y2="400" class="arrow-trace" marker-end="url(#ah5t)"/>
+  <line x1="650" y1="645" x2="650" y2="565" class="arrow-trace" marker-end="url(#ah5t)"/>
+  <line x1="650" y1="810" x2="650" y2="785" class="arrow-trace" marker-end="url(#ah5t)"/>
+  <line x1="650" y1="975" x2="650" y2="950" class="arrow-trace" marker-end="url(#ah5t)"/>
+
+  <!-- Arrow legend -->
+  <text x="475" y="258" class="arrow-label">derives to</text>
+  <text x="545" y="260" class="arrow-label" fill="#718096">traces back</text>
+
+  <text x="550" y="1140" text-anchor="middle" class="foot">
+    Source: INCOSE SEH5 Ch3; ISO/IEC/IEEE 15288:2023 §6.4.1, §6.4.2, §6.4.3, §6.4.4, §6.4.5 — CSEP Week 3 Diagram 5
+  </text>
+</svg>

@@ -45,9 +45,9 @@ CH08 – Crosscutting Methods
 
 | Chapter | Notes | Self-Quiz | Confidence |
 |---------|-------|-----------|------------|
-| CH01 SE Overview | ⬜ | ⬜ | — |
-| CH02 Life Cycle Concepts | ⬜ | ⬜ | — |
-| CH03 Technical Processes | ⬜ | ⬜ | — |
+| CH01 SE Overview | ✅ | ✅ | — |
+| CH02 Life Cycle Concepts | ✅ | ✅ | — |
+| CH03 Technical Processes | 🔄 (§6.4.1–6.4.2 complete via Week 3; §6.4.3+ pending Week 4) | 🔄 | — |
 | CH04 Technical Mgmt Processes | ⬜ | ⬜ | — |
 | CH05 Agreement Processes | ⬜ | ⬜ | — |
 | CH06 Org Enabling Processes | ⬜ | ⬜ | — |

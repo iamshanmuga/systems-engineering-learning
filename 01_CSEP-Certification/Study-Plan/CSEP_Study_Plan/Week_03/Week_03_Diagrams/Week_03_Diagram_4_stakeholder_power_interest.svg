@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 780" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <style>
+    .title { font-size: 20px; font-weight: bold; fill: #1A202C; }
+    .axis { stroke: #1A202C; stroke-width: 2; }
+    .axis-label { font-size: 14px; font-weight: bold; fill: #1A202C; }
+    .quadrant-label { font-size: 15px; font-weight: bold; fill: #1A202C; }
+    .stakeholder-label { font-size: 12px; fill: #1A202C; font-weight: 600; }
+    .dot { fill: #2B6CB0; stroke: #1A365D; stroke-width: 1.5; }
+    .q-keep-satisfied { fill: #FEEBC8; opacity: 0.6; }
+    .q-manage-closely { fill: #FED7D7; opacity: 0.6; }
+    .q-monitor { fill: #E2E8F0; opacity: 0.6; }
+    .q-keep-informed { fill: #C6F6D5; opacity: 0.6; }
+    .foot { font-size: 11px; fill: #4A5568; font-style: italic; }
+    .caveat { font-size: 12px; fill: #742A2A; font-style: italic; font-weight: 600; }
+  </style>
+
+  <text x="450" y="32" text-anchor="middle" class="title">Stakeholder Power–Interest Matrix</text>
+
+  <!-- Quadrant backgrounds -->
+  <rect x="100" y="90"  width="350" height="300" class="q-keep-satisfied"/>
+  <rect x="450" y="90"  width="350" height="300" class="q-manage-closely"/>
+  <rect x="100" y="390" width="350" height="300" class="q-monitor"/>
+  <rect x="450" y="390" width="350" height="300" class="q-keep-informed"/>
+
+  <!-- Quadrant labels -->
+  <text x="275" y="115" text-anchor="middle" class="quadrant-label">Keep Satisfied</text>
+  <text x="625" y="115" text-anchor="middle" class="quadrant-label">Manage Closely</text>
+  <text x="275" y="680" text-anchor="middle" class="quadrant-label">Monitor</text>
+  <text x="625" y="680" text-anchor="middle" class="quadrant-label">Keep Informed</text>
+
+  <!-- Axes -->
+  <line x1="100" y1="690" x2="800" y2="690" class="axis"/>
+  <line x1="100" y1="90"  x2="100" y2="690" class="axis"/>
+
+  <!-- Axis labels -->
+  <text x="450" y="735" text-anchor="middle" class="axis-label">Interest  (low  →  high)</text>
+  <text x="40"  y="390" text-anchor="middle" class="axis-label" transform="rotate(-90, 40, 390)">Power / Influence  (low  →  high)</text>
+
+  <!-- Midlines (quadrant dividers) -->
+  <line x1="450" y1="90" x2="450" y2="690" stroke="#1A202C" stroke-width="1.2" stroke-dasharray="4,3"/>
+  <line x1="100" y1="390" x2="800" y2="390" stroke="#1A202C" stroke-width="1.2" stroke-dasharray="4,3"/>
+
+  <!-- Stakeholder points (coordinates chosen per Mermaid quadrantChart positions, mapped to plot area 100..800 x, 90..690 y with high y = high power) -->
+  <!-- Acquirer: 0.90, 0.92 -->
+  <circle cx="730" cy="144" r="7" class="dot"/>
+  <text x="730" y="135" text-anchor="middle" class="stakeholder-label">Acquirer</text>
+
+  <!-- Regulator: 0.35, 0.85 -->
+  <circle cx="345" cy="180" r="7" class="dot"/>
+  <text x="345" y="171" text-anchor="middle" class="stakeholder-label">Regulator</text>
+
+  <!-- Supplier: 0.55, 0.70 -->
+  <circle cx="485" cy="270" r="7" class="dot"/>
+  <text x="485" y="261" text-anchor="middle" class="stakeholder-label">Supplier</text>
+
+  <!-- Environmental Body: 0.40, 0.55 -->
+  <circle cx="380" cy="360" r="7" class="dot"/>
+  <text x="380" y="351" text-anchor="middle" class="stakeholder-label">Environmental Body</text>
+
+  <!-- Primary User: 0.88, 0.45 -->
+  <circle cx="716" cy="420" r="7" class="dot"/>
+  <text x="716" y="411" text-anchor="middle" class="stakeholder-label">Primary User</text>
+
+  <!-- Operator: 0.75, 0.40 -->
+  <circle cx="625" cy="450" r="7" class="dot"/>
+  <text x="625" y="441" text-anchor="middle" class="stakeholder-label">Operator</text>
+
+  <!-- Maintainer: 0.60, 0.30 -->
+  <circle cx="520" cy="510" r="7" class="dot"/>
+  <text x="520" y="501" text-anchor="middle" class="stakeholder-label">Maintainer</text>
+
+  <!-- Society / Public: 0.25, 0.20 -->
+  <circle cx="275" cy="570" r="7" class="dot"/>
+  <text x="275" y="561" text-anchor="middle" class="stakeholder-label">Society / Public</text>
+
+  <text x="450" y="758" text-anchor="middle" class="caveat">
+    Illustrative practice from SEH5 Ch3 — not mandated by ISO 15288
+  </text>
+  <text x="450" y="775" text-anchor="middle" class="foot">
+    CSEP Week 3 Diagram 4
+  </text>
+</svg>

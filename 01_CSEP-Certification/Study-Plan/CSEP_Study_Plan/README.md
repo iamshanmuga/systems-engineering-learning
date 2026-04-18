@@ -28,9 +28,24 @@ CSEP_Study_Plan/
 │   ├── Week_02_Practice_Questions.md  ← 20 CSEP-style practice MCQs with answer key
 │   ├── Week_02_Assessment_Answers.md  ← Day 1–6 self-check answers & brain dump key
 │   └── Week_02_NotebookLM_Steps.md   ← Manual checklist for mind map, audio & video
-├── Week_03/                           ← (Scheduled — Monday 2026-04-20)
-│   ├── Week_03_Illustration_Diagram_Prompts.md  ← (New from Week 3 onward) Per-summary image-gen prompts
-│   └── Week_03_Diagrams/                        ← (New from Week 3 onward) Rendered Mermaid / SVG / PNG diagrams
+├── Week_03/                           ← ✅ Complete (CH03 Part 1A: BMA → Stakeholder Needs)
+│   ├── Week_03_Study_Plan.md          ← Daily schedule & learning objectives (7 days)
+│   ├── Week_03_Topic_Summaries.md     ← Concise summaries for all 7 topic areas
+│   ├── Week_03_Flashcards.md          ← 55-card exam-focused flashcard deck
+│   ├── Week_03_Flashcards.csv         ← Anki/Quizlet import CSV
+│   ├── Week_03_Flashcards_NotebookLM.csv ← NotebookLM ingestion CSV
+│   ├── Week_03_Audio_Overview_Scripts.md ← 7 podcast-style audio overview scripts (~45 min)
+│   ├── Week_03_References.md          ← Standards, textbooks, and free resources
+│   ├── Week_03_Practice_Questions.md  ← 20 CSEP-style practice MCQs with answer key
+│   ├── Week_03_Assessment_Answers.md  ← Day 1–6 self-check answers & brain dump key
+│   ├── Week_03_Illustration_Diagram_Prompts.md  ← (New from Week 3 onward) Per-summary image-gen prompts — 6 diagrams
+│   └── Week_03_Diagrams/                        ← (New from Week 3 onward) Rendered Mermaid sources (.mmd) + SVG renderings
+│       ├── Week_03_Diagram_1_bma_process_position.{mmd,svg}
+│       ├── Week_03_Diagram_2_conops_vs_opscon.{mmd,svg}
+│       ├── Week_03_Diagram_3_snrd_ipo.{mmd,svg}
+│       ├── Week_03_Diagram_4_stakeholder_power_interest.{mmd,svg}
+│       ├── Week_03_Diagram_5_requirements_hierarchy.{mmd,svg}
+│       └── Week_03_Diagram_6_validation_vs_verification.{mmd,svg}
 └── ...
 ```
 
@@ -41,8 +56,9 @@ CSEP_Study_Plan/
 | Week | Chapter Focus | Theme | Est. Hours | Status |
 |------|--------------|-------|-----------|--------|
 | **Week 1** | CH01 | SE Overview & Fundamentals | 4 | ✅ Complete |
-| Week 2 | CH02 | Life Cycle Concepts | 4 | 🔄 In Progress |
-| Week 3–4 | CH03 | Technical Processes — Part 1 (Stakeholder Needs → Architecture) | 6 | 🔲 Pending |
+| **Week 2** | CH02 | Life Cycle Concepts | 4 | ✅ Complete |
+| **Week 3** | CH03 | Technical Processes — Part 1A (BMA → Stakeholder Needs, §6.4.1–6.4.2) | 3 | ✅ Complete |
+| Week 4 | CH03 | Technical Processes — Part 1B (System Requirements → Architecture, §6.4.3–6.4.4) | 3 | 🔲 Pending |
 | Week 5–6 | CH03 | Technical Processes — Part 2 (Design → Disposal) | 6 | 🔲 Pending |
 | Week 7 | CH04 | Technical Management Processes | 5 | 🔲 Pending |
 | Week 8 | CH05 & CH06 | Agreement & Organizational Project-Enabling Processes | 4 | 🔲 Pending |
@@ -82,6 +98,50 @@ Tiered reference list including:
 - **Tier 1 (Primary):** ISO 15288:2023, SEH5, ISO 29148:2018, ISO 42010:2022
 - **Tier 2 (Secondary):** NASA SE Handbook, SEBoK, DAU Guidebook
 - **Tier 3 (Supplementary):** ISO 31000, DoDAF, textbooks
+
+---
+
+## 📚 Week 3 Contents Summary
+
+### Week_03_Study_Plan.md
+A day-by-day study schedule (Mon–Sun) covering CH03 Part 1A — Business/Mission Analysis → Stakeholder Needs (~3 hours total):
+- Day 1: Why BMA exists — solution-first trap, enterprise→project bridge, BMA purpose (ISO 15288 §6.4.1)
+- Day 2: Inside BMA — 5 activity clusters, ConOps vs OpsCon (ISO 29148 §4.2 / §4.3), MoEs
+- Day 3: SN&RD purpose — Acquirer→Supplier perspective shift (ISO 15288 §6.4.2)
+- Day 4: Stakeholder identification & elicitation techniques (8 categories, 8+ elicitation methods)
+- Day 5: 6-level requirements hierarchy + 9 ISO 29148 §5.2 characteristics ("NAU CSF VCC")
+- Day 6: Validation criteria, MoEs/MoPs, baselining, V&V distinction (4 verification methods — TAID)
+- Day 7: Review, brain dump & Week 3 self-assessment
+
+### Week_03_Topic_Summaries.md
+Seven topic summaries (Summary 1–7) covering BMA, ConOps/OpsCon, SN&RD, stakeholders, requirements hierarchy, characteristics & baselining, and validation — each with Suggested Illustration blocks cross-referenced from the Diagram Prompts file.
+
+### Week_03_Flashcards.md
+55 Q&A flashcards across 3 topic sections (with a finer 6-way day-level slicing for daily drill):
+- **Section 1 — Business or Mission Analysis (Cards 1–17)** — Days 1 & 2 (BMA purpose 1–8 · BMA activities & ConOps/OpsCon 9–17)
+- **Section 2 — Stakeholder Needs & Requirements Definition (Cards 18–41)** — Days 3 & 4 (SN&RD purpose 18–29 · stakeholders & elicitation 30–41)
+- **Section 3 — Requirements Hierarchy, Characteristics & Baselining (Cards 42–55)** — Days 5 & 6 (hierarchy & 9 characteristics 42–51 · MoE/MoP, baselining, V&V 52–55)
+
+### Week_03_Audio_Overview_Scripts.md
+Seven conversational audio scripts (Host & Guest dialogue, NotebookLM-style) — approx. 45 minutes total runtime, matched to the 7 topic summaries.
+
+### Week_03_References.md
+Tiered reference list scoped to CH03 §6.4.1 and §6.4.2:
+- **Tier 1 (Primary):** ISO 15288:2023 §6.4.1 and §6.4.2, SEH5 Ch3, ISO 29148:2018 §4.2, §4.3, §5.2, §9
+- **Tier 2 (Secondary):** SEBoK, NASA SEH, DAU Guidebook, INCOSE GtWR
+- **Tier 3 (Supplementary):** ISO 24748-1, Robertson Volere, Alexander & Stevens, Kulak & Guiney
+
+### Week_03_Practice_Questions.md
+20 CSEP-style MCQs with answer key, rationales, and ISO/SEH5 citations.
+
+### Week_03_Assessment_Answers.md
+Model answers for Day 1–6 self-checks and the Day 7 brain dump, including the 6-level hierarchy table, 5-of-5 competency rubric, Next Steps, and the "NAU CSF VCC" mnemonic for the 9 characteristics.
+
+### Week_03_Illustration_Diagram_Prompts.md (new series starting Week 3)
+Six diagram specifications — each with linked summary, output filename, recommended tool, standards reference, Mermaid source, AI-prompt alternative, MUST-show / MUST-NOT-show items, and exam relevance.
+
+### Week_03_Diagrams/
+Six Mermaid source files (.mmd) plus six hand-authored SVG renderings — render in any browser or Markdown viewer. Topics: BMA process position, ConOps vs OpsCon, SN&RD IPO, Stakeholder power–interest matrix, 6-level requirements hierarchy, Validation vs Verification tracks.
 
 ---
 

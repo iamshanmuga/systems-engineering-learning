@@ -1,0 +1,33 @@
+%% Week 03 Diagram 6 — Validation vs Verification: Parallel Tracks
+%% Linked summary: Summary 7 in Week_03_Topic_Summaries.md
+%% Standards reference: ISO/IEC/IEEE 15288:2023 §3 (definitions), §6.4.9 (Verification), §6.4.11 (Validation)
+flowchart TB
+    Source["<b>SN&RD outputs</b><br/>(stakeholder requirements baseline,<br/>ConOps/OpsCon, MoEs, MoPs,<br/>validation criteria)"]
+
+    subgraph ValSide["Validation Track"]
+        direction TB
+        V1["<b>Anchor:</b> MoEs<br/>(mission/stakeholder level)"]
+        V2["<b>Question:</b><br/>Did we build the <i>right</i> system?"]
+        V3["<b>Process:</b> Validation<br/>ISO 15288 §6.4.11"]
+        V4["<b>Definition (ISO 15288 §3):</b><br/><i>Confirmation, through the provision of<br/>objective evidence, that the requirements<br/>for a specific intended use or application<br/>have been fulfilled.</i>"]
+        V1 --> V2 --> V3 --> V4
+    end
+
+    subgraph VerSide["Verification Track"]
+        direction TB
+        R1["<b>Anchor:</b> MoPs<br/>(system level)"]
+        R2["<b>Question:</b><br/>Did we build the system <i>right</i>?"]
+        R3["<b>Process:</b> Verification<br/>ISO 15288 §6.4.9"]
+        R4["<b>Definition (ISO 15288 §3):</b><br/><i>Confirmation, through the provision of<br/>objective evidence, that specified<br/>requirements have been fulfilled.</i>"]
+        R1 --> R2 --> R3 --> R4
+    end
+
+    Source --> ValSide
+    Source --> VerSide
+
+    classDef source fill:#F7FAFC,stroke:#1A202C,stroke-width:1.5px,color:#1A202C
+    classDef val fill:#E6F4EA,stroke:#2F855A,stroke-width:1.5px,color:#1A202C
+    classDef ver fill:#EBF8FF,stroke:#2B6CB0,stroke-width:1.5px,color:#1A202C
+    class Source source
+    class V1,V2,V3,V4 val
+    class R1,R2,R3,R4 ver

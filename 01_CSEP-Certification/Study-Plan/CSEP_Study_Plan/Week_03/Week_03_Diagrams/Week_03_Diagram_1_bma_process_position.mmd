@@ -1,0 +1,19 @@
+%% Week 03 Diagram 1 — The BMA Process: Purpose and Position in ISO 15288
+%% Linked summary: Summary 1 in Week_03_Topic_Summaries.md
+%% Standards reference: ISO/IEC/IEEE 15288:2023 §6.4.1; §6.4.2; §6.4.3; §6.4.4
+flowchart LR
+    A["Enterprise Strategy<br/>Portfolio Decisions<br/>Mission Statements"]
+    B["Business or Mission<br/>Analysis (BMA)<br/>ISO 15288 §6.4.1"]
+    C["Stakeholder Needs &<br/>Requirements Definition<br/>ISO 15288 §6.4.2"]
+    D["System Requirements<br/>Definition<br/>ISO 15288 §6.4.3"]
+    E["Architecture<br/>Definition<br/>ISO 15288 §6.4.4"]
+
+    A -->|Strategy, gaps,<br/>regulatory drivers| B
+    B -->|Preliminary ConOps,<br/>business requirements,<br/>MoEs, preferred<br/>solution class| C
+    C -->|Stakeholder<br/>requirements baseline,<br/>validated ConOps/OpsCon| D
+    D -->|System requirements<br/>baseline| E
+
+    classDef process fill:#E8F1FA,stroke:#2B6CB0,stroke-width:1.5px,color:#1A202C
+    classDef enterprise fill:#F7FAFC,stroke:#718096,stroke-width:1px,color:#1A202C
+    class A enterprise
+    class B,C,D,E process

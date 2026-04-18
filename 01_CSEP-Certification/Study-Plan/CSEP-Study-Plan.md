@@ -9,9 +9,10 @@
 
 | Week | Focus Area | Hours | Status |
 |------|-----------|-------|--------|
-| 1 | CH01 – SE Overview & Fundamentals | 4 | ⬜ |
-| 2 | CH02 – Life Cycle Concepts | 4 | ⬜ |
-| 3–4 | CH03 – Technical Processes (Part 1: BMA → Architecture) | 6 | ⬜ |
+| 1 | CH01 – SE Overview & Fundamentals | 4 | ✅ |
+| 2 | CH02 – Life Cycle Concepts | 4 | ✅ |
+| 3 | CH03 – Technical Processes Part 1A (BMA → Stakeholder Needs, §6.4.1–6.4.2) | 3 | ✅ |
+| 4 | CH03 – Technical Processes Part 1B (System Req → Architecture, §6.4.3–6.4.4) | 3 | ⬜ |
 | 5–6 | CH03 – Technical Processes (Part 2: Design → Disposal) | 6 | ⬜ |
 | 7 | CH04 – Technical Management Processes | 5 | ⬜ |
 | 8 | CH05 & CH06 – Agreement & Org Enabling Processes | 4 | ⬜ |

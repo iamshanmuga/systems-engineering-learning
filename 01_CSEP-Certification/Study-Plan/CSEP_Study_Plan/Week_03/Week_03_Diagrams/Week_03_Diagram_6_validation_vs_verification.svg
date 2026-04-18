@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 960" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <style>
+    .title { font-size: 22px; font-weight: bold; fill: #1A202C; }
+    .subtitle { font-size: 15px; font-weight: bold; fill: #1A202C; }
+    .label { fill: #1A202C; font-weight: 600; }
+    .value { fill: #2D3748; }
+    .italic { font-style: italic; fill: #2D3748; }
+    .source-bg { fill: #F7FAFC; stroke: #1A202C; stroke-width: 1.8; rx: 8; ry: 8; }
+    .val-bg { fill: #E6F4EA; stroke: #2F855A; stroke-width: 1.8; rx: 8; ry: 8; }
+    .ver-bg { fill: #EBF8FF; stroke: #2B6CB0; stroke-width: 1.8; rx: 8; ry: 8; }
+    .val-row { fill: #FFFFFF; stroke: #2F855A; stroke-width: 1; rx: 4; ry: 4; }
+    .ver-row { fill: #FFFFFF; stroke: #2B6CB0; stroke-width: 1; rx: 4; ry: 4; }
+    .arrow { stroke: #2D3748; stroke-width: 2; fill: none; }
+    .foot { font-size: 11px; fill: #4A5568; font-style: italic; }
+    .defn { font-size: 12px; font-style: italic; fill: #1A202C; }
+  </style>
+
+  <text x="600" y="32" text-anchor="middle" class="title">Validation vs Verification — Parallel Tracks</text>
+
+  <defs>
+    <marker id="ah6" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2D3748"/>
+    </marker>
+  </defs>
+
+  <!-- Source block -->
+  <rect x="300" y="70" width="600" height="110" class="source-bg"/>
+  <text x="600" y="100" text-anchor="middle" class="subtitle">SN&amp;RD outputs</text>
+  <text x="600" y="125" text-anchor="middle" class="value">stakeholder requirements baseline, ConOps/OpsCon,</text>
+  <text x="600" y="145" text-anchor="middle" class="value">MoEs, MoPs, validation criteria</text>
+  <text x="600" y="168" text-anchor="middle" class="italic">(ISO 15288 §6.4.2)</text>
+
+  <!-- Split arrows -->
+  <line x1="450" y1="180" x2="280" y2="230" class="arrow" marker-end="url(#ah6)"/>
+  <line x1="750" y1="180" x2="920" y2="230" class="arrow" marker-end="url(#ah6)"/>
+
+  <!-- Validation track -->
+  <rect x="60" y="240" width="460" height="650" class="val-bg"/>
+  <text x="290" y="275" text-anchor="middle" class="subtitle" fill="#22543D">Validation Track</text>
+
+  <rect x="90" y="300" width="400" height="100" class="val-row"/>
+  <text x="110" y="325" class="label">Anchor</text>
+  <text x="110" y="355" class="value">MoEs</text>
+  <text x="110" y="378" class="italic">(mission / stakeholder level)</text>
+
+  <rect x="90" y="415" width="400" height="100" class="val-row"/>
+  <text x="110" y="440" class="label">Question</text>
+  <text x="110" y="470" class="value">Did we build the <tspan font-style="italic" font-weight="bold">right</tspan> system?</text>
+
+  <rect x="90" y="530" width="400" height="100" class="val-row"/>
+  <text x="110" y="555" class="label">Process</text>
+  <text x="110" y="585" class="value">Validation</text>
+  <text x="110" y="608" class="italic">ISO 15288 §6.4.11</text>
+
+  <rect x="90" y="645" width="400" height="215" class="val-row"/>
+  <text x="110" y="670" class="label">Definition (ISO 15288 §3)</text>
+  <text x="110" y="700" class="defn">Confirmation, through the provision</text>
+  <text x="110" y="720" class="defn">of objective evidence, that the</text>
+  <text x="110" y="740" class="defn">requirements for a specific intended</text>
+  <text x="110" y="760" class="defn">use or application have been</text>
+  <text x="110" y="780" class="defn">fulfilled.</text>
+
+  <!-- Verification track -->
+  <rect x="680" y="240" width="460" height="650" class="ver-bg"/>
+  <text x="910" y="275" text-anchor="middle" class="subtitle" fill="#2A4365">Verification Track</text>
+
+  <rect x="710" y="300" width="400" height="100" class="ver-row"/>
+  <text x="730" y="325" class="label">Anchor</text>
+  <text x="730" y="355" class="value">MoPs</text>
+  <text x="730" y="378" class="italic">(system level)</text>
+
+  <rect x="710" y="415" width="400" height="100" class="ver-row"/>
+  <text x="730" y="440" class="label">Question</text>
+  <text x="730" y="470" class="value">Did we build the system <tspan font-style="italic" font-weight="bold">right</tspan>?</text>
+
+  <rect x="710" y="530" width="400" height="100" class="ver-row"/>
+  <text x="730" y="555" class="label">Process</text>
+  <text x="730" y="585" class="value">Verification</text>
+  <text x="730" y="608" class="italic">ISO 15288 §6.4.9</text>
+
+  <rect x="710" y="645" width="400" height="215" class="ver-row"/>
+  <text x="730" y="670" class="label">Definition (ISO 15288 §3)</text>
+  <text x="730" y="700" class="defn">Confirmation, through the provision</text>
+  <text x="730" y="720" class="defn">of objective evidence, that specified</text>
+  <text x="730" y="740" class="defn">requirements have been fulfilled.</text>
+
+  <text x="600" y="935" text-anchor="middle" class="foot">
+    Source: ISO/IEC/IEEE 15288:2023 §3 (definitions), §6.4.9 (Verification), §6.4.11 (Validation); INCOSE SEH5 Ch3 — CSEP Week 3 Diagram 6
+  </text>
+</svg>

@@ -1,0 +1,27 @@
+%% Week 03 Diagram 5 — The Six-Level Requirements Hierarchy
+%% Linked summary: Summary 5 in Week_03_Topic_Summaries.md
+%% Standards reference: ISO/IEC/IEEE 15288:2023 §6.4.1, §6.4.2, §6.4.3, §6.4.4, §6.4.5
+flowchart TB
+    L1["<b>1 — Business / Mission Need</b><br/><i>Example: reduce mission planning time by 50%</i><br/>Produced by: BMA (ISO 15288 §6.4.1)"]
+    L2["<b>2 — Stakeholder Need</b><br/><i>Example: planners want faster scenario iteration</i><br/>Produced by: SN&RD (ISO 15288 §6.4.2)"]
+    L3["<b>3 — Stakeholder Requirement</b><br/><i>Example: the system shall generate a mission<br/>plan within 10 min of new intelligence input</i><br/>Produced by: SN&RD (ISO 15288 §6.4.2)"]
+    L4["<b>4 — System Requirement</b><br/><i>Example: the planning service shall process<br/>1 000 way-points in &lt; 5 s at 99th percentile</i><br/>Produced by: System Requirements Definition (§6.4.3)"]
+    L5["<b>5 — Subsystem / Element Requirement</b><br/><i>Example: the route-optimisation module shall<br/>return a candidate path in &lt; 500 ms</i><br/>Produced by: Architecture Definition (§6.4.4)"]
+    L6["<b>6 — Component / Implementation Requirement</b><br/><i>Example: the cache shall use LRU eviction<br/>with 10 000-entry capacity</i><br/>Produced by: Design Definition (§6.4.5)"]
+
+    L1 -->|derives to<br/>(trace forward)| L2
+    L2 -->|derives to| L3
+    L3 -->|derives to| L4
+    L4 -->|derives to| L5
+    L5 -->|derives to| L6
+
+    L6 -.->|traces back<br/>(bidirectional)| L5
+    L5 -.-> L4
+    L4 -.-> L3
+    L3 -.-> L2
+    L2 -.-> L1
+
+    classDef stakeholder fill:#FFF5F5,stroke:#C53030,stroke-width:1.2px,color:#1A202C
+    classDef engineering fill:#E8F1FA,stroke:#2B6CB0,stroke-width:1.2px,color:#1A202C
+    class L1,L2,L3 stakeholder
+    class L4,L5,L6 engineering

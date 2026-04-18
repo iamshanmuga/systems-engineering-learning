@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <style>
+    .box { stroke-width: 1.5; rx: 8; ry: 8; }
+    .enterprise { fill: #F7FAFC; stroke: #718096; }
+    .process { fill: #E8F1FA; stroke: #2B6CB0; stroke-width: 1.5; }
+    .process-hl { fill: #BEE3F8; stroke: #2B6CB0; stroke-width: 2.5; }
+    .title { font-size: 20px; font-weight: bold; fill: #1A202C; }
+    .label { fill: #1A202C; font-weight: 600; }
+    .arrow-label { fill: #2D3748; font-size: 11px; font-style: italic; }
+    .arrow { stroke: #2D3748; stroke-width: 1.5; fill: none; }
+    .foot { font-size: 11px; fill: #4A5568; font-style: italic; }
+  </style>
+
+  <text x="640" y="30" text-anchor="middle" class="title">The BMA Process — Purpose and Position in ISO 15288</text>
+
+  <!-- Boxes -->
+  <rect x="20"   y="140" width="210" height="120" class="box enterprise"/>
+  <rect x="290"  y="140" width="200" height="120" class="box process-hl"/>
+  <rect x="550"  y="140" width="200" height="120" class="box process"/>
+  <rect x="810"  y="140" width="200" height="120" class="box process"/>
+  <rect x="1070" y="140" width="190" height="120" class="box process"/>
+
+  <!-- Box text -->
+  <g class="label" text-anchor="middle">
+    <text x="125" y="180">Enterprise Strategy</text>
+    <text x="125" y="200">Portfolio Decisions</text>
+    <text x="125" y="220">Mission Statements</text>
+
+    <text x="390" y="180">Business or Mission</text>
+    <text x="390" y="200">Analysis (BMA)</text>
+    <text x="390" y="228" font-style="italic" font-weight="normal">ISO 15288 §6.4.1</text>
+
+    <text x="650" y="180">Stakeholder Needs &amp;</text>
+    <text x="650" y="200">Requirements Definition</text>
+    <text x="650" y="228" font-style="italic" font-weight="normal">ISO 15288 §6.4.2</text>
+
+    <text x="910" y="180">System Requirements</text>
+    <text x="910" y="200">Definition</text>
+    <text x="910" y="228" font-style="italic" font-weight="normal">ISO 15288 §6.4.3</text>
+
+    <text x="1165" y="180">Architecture</text>
+    <text x="1165" y="200">Definition</text>
+    <text x="1165" y="228" font-style="italic" font-weight="normal">ISO 15288 §6.4.4</text>
+  </g>
+
+  <!-- Arrowhead marker -->
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2D3748"/>
+    </marker>
+  </defs>
+
+  <!-- Arrows -->
+  <line x1="230" y1="200" x2="290" y2="200" class="arrow" marker-end="url(#ah)"/>
+  <line x1="490" y1="200" x2="550" y2="200" class="arrow" marker-end="url(#ah)"/>
+  <line x1="750" y1="200" x2="810" y2="200" class="arrow" marker-end="url(#ah)"/>
+  <line x1="1010" y1="200" x2="1070" y2="200" class="arrow" marker-end="url(#ah)"/>
+
+  <!-- Arrow labels -->
+  <g class="arrow-label" text-anchor="middle">
+    <text x="260" y="112">Strategy, gaps,</text>
+    <text x="260" y="128">regulatory drivers</text>
+    <text x="260" y="285">(BMA inputs)</text>
+
+    <text x="520" y="100">Preliminary ConOps,</text>
+    <text x="520" y="115">business requirements,</text>
+    <text x="520" y="130">MoEs, preferred</text>
+    <text x="520" y="285">solution class</text>
+
+    <text x="780" y="100">Stakeholder</text>
+    <text x="780" y="115">requirements baseline,</text>
+    <text x="780" y="130">validated ConOps /</text>
+    <text x="780" y="285">OpsCon</text>
+
+    <text x="1040" y="112">System requirements</text>
+    <text x="1040" y="128">baseline</text>
+  </g>
+
+  <text x="640" y="395" text-anchor="middle" class="foot">
+    Source: INCOSE SEH5 Ch3; ISO/IEC/IEEE 15288:2023 §6.4.1, §6.4.2, §6.4.3, §6.4.4 — CSEP Week 3 Diagram 1
+  </text>
+</svg>

@@ -1,0 +1,28 @@
+%% Week 03 Diagram 2 — ConOps vs OpsCon: Two Viewpoints on One Capability
+%% Linked summary: Summary 2 in Week_03_Topic_Summaries.md
+%% Standards reference: ISO/IEC/IEEE 29148:2018 §4.2 (ConOps) and §4.3 (OpsCon)
+flowchart LR
+    subgraph ConOps["ConOps — ISO 29148 §4.2"]
+        direction TB
+        C1["<b>Perspective</b><br/>Acquirer / User"]
+        C2["<b>Author</b><br/>Acquirer (or acquirer's SE)"]
+        C3["<b>Audience</b><br/>Stakeholders, acquirer<br/>leadership, supplier"]
+        C4["<b>Typical content</b><br/>Mission, users, operational<br/>scenarios, capability<br/>in environment"]
+        C1 --- C2 --- C3 --- C4
+    end
+
+    subgraph OpsCon["OpsCon — ISO 29148 §4.3"]
+        direction TB
+        O1["<b>Perspective</b><br/>Supplier / System developer"]
+        O2["<b>Author</b><br/>Supplier (or supplier's SE)"]
+        O3["<b>Audience</b><br/>Developers, architects,<br/>V&V engineers"]
+        O4["<b>Typical content</b><br/>System modes, operational<br/>characteristics, interfaces,<br/>performance profiles"]
+        O1 --- O2 --- O3 --- O4
+    end
+
+    ConOps -->|derives / informs| OpsCon
+
+    classDef conops fill:#E6F4EA,stroke:#2F855A,stroke-width:1.5px,color:#1A202C
+    classDef opscon fill:#EBF8FF,stroke:#2B6CB0,stroke-width:1.5px,color:#1A202C
+    class C1,C2,C3,C4 conops
+    class O1,O2,O3,O4 opscon

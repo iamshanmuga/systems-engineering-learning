@@ -1,0 +1,32 @@
+%% Week 03 Diagram 3 — SN&RD Input-Process-Output View
+%% Linked summary: Summary 3 in Week_03_Topic_Summaries.md
+%% Standards reference: ISO/IEC/IEEE 15288:2023 §6.4.2; ISO/IEC/IEEE 29148:2018 §9
+flowchart LR
+    subgraph Inputs["Inputs"]
+        direction TB
+        I1["BMA outputs<br/>(preliminary ConOps,<br/>business requirements,<br/>MoEs, solution class)"]
+        I2["Stakeholder identification<br/>and analysis"]
+        I3["Regulations, policies,<br/>and constraints"]
+        I4["Existing system<br/>documentation and<br/>environment data"]
+    end
+
+    Process["<b>Stakeholder Needs and<br/>Requirements Definition</b><br/>ISO 15288 §6.4.2<br/>ISO 29148 §9"]
+
+    subgraph Outputs["Outputs"]
+        direction TB
+        O1["Stakeholder needs<br/>(stakeholder language)"]
+        O2["Stakeholder requirements<br/>(engineering language)"]
+        O3["Stakeholder requirements<br/>baseline (config-controlled)"]
+        O4["Validated ConOps / OpsCon"]
+        O5["Validation criteria<br/>and MoEs/MoPs"]
+    end
+
+    Inputs --> Process --> Outputs
+    Outputs -.->|stakeholder feedback<br/>loop (iterate)| Inputs
+
+    classDef inp fill:#FFF5F5,stroke:#C53030,stroke-width:1px,color:#1A202C
+    classDef proc fill:#E8F1FA,stroke:#2B6CB0,stroke-width:2px,color:#1A202C
+    classDef outp fill:#F0FFF4,stroke:#2F855A,stroke-width:1px,color:#1A202C
+    class I1,I2,I3,I4 inp
+    class Process proc
+    class O1,O2,O3,O4,O5 outp

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 680" font-family="Helvetica, Arial, sans-serif" font-size="13">
+  <style>
+    .title { font-size: 20px; font-weight: bold; fill: #1A202C; }
+    .subtitle { font-size: 15px; font-weight: bold; fill: #1A202C; }
+    .label { fill: #1A202C; font-weight: 600; }
+    .value { fill: #2D3748; }
+    .in-bg { fill: #FFF5F5; stroke: #C53030; stroke-width: 1.2; rx: 8; ry: 8; }
+    .proc-bg { fill: #E8F1FA; stroke: #2B6CB0; stroke-width: 2.5; rx: 8; ry: 8; }
+    .out-bg { fill: #F0FFF4; stroke: #2F855A; stroke-width: 1.2; rx: 8; ry: 8; }
+    .item-in { fill: #FFFFFF; stroke: #C53030; stroke-width: 1; rx: 4; ry: 4; }
+    .item-out { fill: #FFFFFF; stroke: #2F855A; stroke-width: 1; rx: 4; ry: 4; }
+    .arrow { stroke: #2D3748; stroke-width: 2; fill: none; }
+    .arrow-dashed { stroke: #4A5568; stroke-width: 1.5; fill: none; stroke-dasharray: 6,4; }
+    .arrow-label { fill: #2D3748; font-size: 12px; font-style: italic; font-weight: 600; }
+    .foot { font-size: 11px; fill: #4A5568; font-style: italic; }
+  </style>
+
+  <text x="640" y="32" text-anchor="middle" class="title">Stakeholder Needs and Requirements Definition (SN&amp;RD) — IPO View</text>
+
+  <defs>
+    <marker id="ah3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#2D3748"/>
+    </marker>
+    <marker id="ah3d" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4A5568"/>
+    </marker>
+  </defs>
+
+  <!-- Inputs column -->
+  <rect x="30" y="70" width="350" height="500" class="in-bg"/>
+  <text x="205" y="100" text-anchor="middle" class="subtitle" fill="#742A2A">Inputs</text>
+
+  <rect x="55" y="120" width="300" height="90" class="item-in"/>
+  <text x="70" y="142" class="label">BMA outputs</text>
+  <text x="70" y="162" class="value">(preliminary ConOps,</text>
+  <text x="70" y="180" class="value">business requirements,</text>
+  <text x="70" y="198" class="value">MoEs, solution class)</text>
+
+  <rect x="55" y="225" width="300" height="70" class="item-in"/>
+  <text x="70" y="250" class="label">Stakeholder identification</text>
+  <text x="70" y="270" class="value">and analysis</text>
+
+  <rect x="55" y="310" width="300" height="70" class="item-in"/>
+  <text x="70" y="335" class="label">Regulations, policies,</text>
+  <text x="70" y="355" class="value">and constraints</text>
+
+  <rect x="55" y="395" width="300" height="90" class="item-in"/>
+  <text x="70" y="420" class="label">Existing system</text>
+  <text x="70" y="440" class="value">documentation and</text>
+  <text x="70" y="460" class="value">environment data</text>
+
+  <!-- Process column -->
+  <rect x="440" y="230" width="400" height="180" class="proc-bg"/>
+  <text x="640" y="290" text-anchor="middle" class="subtitle">Stakeholder Needs and</text>
+  <text x="640" y="315" text-anchor="middle" class="subtitle">Requirements Definition</text>
+  <text x="640" y="345" text-anchor="middle" class="value" font-style="italic">ISO 15288 §6.4.2</text>
+  <text x="640" y="368" text-anchor="middle" class="value" font-style="italic">ISO 29148 §9</text>
+
+  <!-- Outputs column -->
+  <rect x="900" y="70" width="350" height="500" class="out-bg"/>
+  <text x="1075" y="100" text-anchor="middle" class="subtitle" fill="#22543D">Outputs</text>
+
+  <rect x="925" y="120" width="300" height="70" class="item-out"/>
+  <text x="940" y="145" class="label">Stakeholder needs</text>
+  <text x="940" y="165" class="value">(stakeholder language)</text>
+
+  <rect x="925" y="205" width="300" height="70" class="item-out"/>
+  <text x="940" y="230" class="label">Stakeholder requirements</text>
+  <text x="940" y="250" class="value">(engineering language)</text>
+
+  <rect x="925" y="290" width="300" height="70" class="item-out"/>
+  <text x="940" y="315" class="label">Stakeholder requirements</text>
+  <text x="940" y="335" class="value">baseline (config-controlled)</text>
+
+  <rect x="925" y="375" width="300" height="60" class="item-out"/>
+  <text x="940" y="400" class="label">Validated ConOps / OpsCon</text>
+
+  <rect x="925" y="450" width="300" height="70" class="item-out"/>
+  <text x="940" y="475" class="label">Validation criteria</text>
+  <text x="940" y="495" class="value">and MoEs / MoPs</text>
+
+  <!-- Flow arrows -->
+  <line x1="380" y1="320" x2="440" y2="320" class="arrow" marker-end="url(#ah3)"/>
+  <line x1="840" y1="320" x2="900" y2="320" class="arrow" marker-end="url(#ah3)"/>
+
+  <!-- Feedback loop -->
+  <path d="M 1075 570 Q 640 640 205 570" class="arrow-dashed" marker-end="url(#ah3d)"/>
+  <text x="640" y="625" text-anchor="middle" class="arrow-label" fill="#4A5568">stakeholder feedback loop (iterate)</text>
+
+  <text x="640" y="665" text-anchor="middle" class="foot">
+    Source: ISO/IEC/IEEE 15288:2023 §6.4.2; ISO/IEC/IEEE 29148:2018 §9; INCOSE SEH5 Ch3 — CSEP Week 3 Diagram 3
+  </text>
+</svg>
