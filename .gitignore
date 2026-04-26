@@ -58,3 +58,7 @@ npm-debug.log*
 # ─── Dissolved Nested Repos ──────────────────────────────────────────────────
 # Renamed .git folders from dissolved nested repositories — safe to ignore.
 **/.git_dissolved/
+
+# ─── Claude Cowork ──────────────────────────────────────────────────────
+.claude/settings.local.json
+memory/
