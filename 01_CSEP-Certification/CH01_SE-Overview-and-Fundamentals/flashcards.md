@@ -89,4 +89,4 @@ Mark cards: ✅ Known | 🔄 Review | ❌ Re-study
 ---
 
 *Flashcard Deck Version: 2.0 | Updated: 2026-04-03 | Source: INCOSE SEH 5th Edition + ISO/IEC/IEEE 15288:2023*
-*Next deck: Week_02_Flashcards.md — System Life Cycle Concepts (Cards covering the six life cycle stages, life cycle models, and tailoring)*
+*Next deck: week_02_flashcards.md — System Life Cycle Concepts (Cards covering the six life cycle stages, life cycle models, and tailoring)*

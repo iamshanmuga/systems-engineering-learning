@@ -36,20 +36,20 @@ All deliverables for a given week go under:
 
 | Deliverable | Filename |
 |-------------|----------|
-| Day-by-day study plan | `Week_XX_Study_Plan.md` |
-| Exam-focused topic summaries | `Week_XX_Topic_Summaries.md` |
-| Q&A flashcard deck (Markdown) | `Week_XX_Flashcards.md` |
-| Flashcards exported as CSV | `Week_XX_Flashcards.csv` |
-| Flashcards formatted for NotebookLM | `Week_XX_Flashcards_NotebookLM.csv` |
-| Audio overview podcast scripts | `Week_XX_Audio_Overview_Scripts.md` |
-| Tiered references / further reading | `Week_XX_References.md` |
-| Mind map (generated via NotebookLM / draw.io) | `Week_XX_Mind_Map.png` |
-| Narrated audio overview (NotebookLM) | `Week_XX_Audio_Overview.m4a` |
-| Video overview (NotebookLM) | `Week_XX_Video_Overview.mp4` |
-| Practice questions (exam-style MCQ) | `Week_XX_Practice_Questions.md` |
-| Week assessment / brain dump answer key | `Week_XX_Assessment_Answers.md` |
-| Illustration diagram prompts (one per topic summary) | `Week_XX_Illustration_Diagram_Prompts.md` |
-| Generated illustration diagrams (Mermaid/SVG/PNG) | `Week_XX_Diagrams/` (folder, one file per summary: `Week_XX_Diagram_<n>_<slug>.{mmd,svg,png}`) |
+| Day-by-day study plan | `week_xx_study_plan.md` |
+| Exam-focused topic summaries | `week_xx_topic_summaries.md` |
+| Q&A flashcard deck (Markdown) | `week_xx_flashcards.md` |
+| Flashcards exported as CSV | `week_xx_flashcards.csv` |
+| Flashcards formatted for NotebookLM | `week_xx_flashcards_notebooklm.csv` |
+| Audio overview podcast scripts | `week_xx_audio_overview_scripts.md` |
+| Tiered references / further reading | `week_xx_references.md` |
+| Mind map (generated via NotebookLM / draw.io) | `week_xx_mind_map.png` |
+| Narrated audio overview (NotebookLM) | `week_xx_audio_overview.m4a` |
+| Video overview (NotebookLM) | `week_xx_video_overview.mp4` |
+| Practice questions (exam-style MCQ) | `week_xx_practice_questions.md` |
+| Week assessment / brain dump answer key | `week_xx_assessment_answers.md` |
+| Illustration diagram prompts (one per topic summary) | `week_xx_illustration_diagram_prompts.md` |
+| Generated illustration diagrams (Mermaid/SVG/PNG) | `Week_XX_Diagrams/` (folder, one file per summary: `week_xx_diagram_<n>_<slug>.{mmd,svg,png}`) |
 
 ---
 
@@ -101,7 +101,7 @@ Tick each item once produced and saved to `Week_XX/`.
 
 ---
 
-### Prompt 1 — Study Plan (`Week_XX_Study_Plan.md`)
+### Prompt 1 — Study Plan (`week_xx_study_plan.md`)
 
 ```
 You are an INCOSE-certified CSEP tutor building a 7-day study plan for Week {{WEEK_NUMBER}}
@@ -137,12 +137,12 @@ Constraints:
 - Use INCOSE / ISO 15288 terminology exactly.
 - Every definition table must cite the standard (e.g. "INCOSE SEH5", "ISO 15288 §6.4.3").
 - Use only Markdown — no HTML. Tables must render in GitHub-flavoured Markdown.
-- Match the formatting style of Week_01_Study_Plan.md in this repo.
+- Match the formatting style of week_01_study_plan.md in this repo.
 ```
 
 ---
 
-### Prompt 2 — Topic Summaries (`Week_XX_Topic_Summaries.md`)
+### Prompt 2 — Topic Summaries (`week_xx_topic_summaries.md`)
 
 ```
 You are writing concise, exam-focused topic summaries for Week {{WEEK_NUMBER}} of the CSEP
@@ -175,18 +175,18 @@ Rules:
   etc.
 - Write in UK English.
 - End the document with a version footer.
-- Match the structure and tone of Week_01_Topic_Summaries.md.
+- Match the structure and tone of week_01_topic_summaries.md.
 ```
 
 ---
 
-### Prompt 3 — Flashcards (`Week_XX_Flashcards.md`)
+### Prompt 3 — Flashcards (`week_xx_flashcards.md`)
 
 ```
 Build a spaced-repetition flashcard deck for Week {{WEEK_NUMBER}} — {{WEEK_TOPIC}}.
 Target: 50 ±10 cards, organised into 2–4 logical sections mapped to the week's sub-topics.
 
-Input material: the Week_{{WEEK_NUMBER}}_Study_Plan.md and Week_{{WEEK_NUMBER}}_Topic_Summaries.md
+Input material: the week_{{WEEK_NUMBER}}_study_plan.md and week_{{WEEK_NUMBER}}_topic_summaries.md
 I have just produced.
 
 Output format: a single Markdown file with:
@@ -204,15 +204,15 @@ Rules:
 - Each card must be standalone — no "see card 12" references.
 - Answers should be 1–3 sentences maximum. Longer facts go as their own card.
 - Use exam-style phrasing: "Define X", "Name three Y", "What distinguishes A from B?".
-- Match the structure of Week_01_Flashcards.md.
+- Match the structure of week_01_flashcards.md.
 ```
 
 ---
 
-### Prompt 4a — Flashcards CSV (`Week_XX_Flashcards.csv`)
+### Prompt 4a — Flashcards CSV (`week_xx_flashcards.csv`)
 
 ```
-Convert Week_{{WEEK_NUMBER}}_Flashcards.md into a CSV suitable for Anki/Quizlet import.
+Convert Week_{{WEEK_NUMBER}}_flashcards.md into a CSV suitable for Anki/Quizlet import.
 
 CSV format:
 - Header row: Front,Back,Tags
@@ -226,10 +226,10 @@ CSV format:
 
 ---
 
-### Prompt 4b — NotebookLM Flashcards CSV (`Week_XX_Flashcards_NotebookLM.csv`)
+### Prompt 4b — NotebookLM Flashcards CSV (`week_xx_flashcards_notebooklm.csv`)
 
 ```
-Produce a CSV formatted for NotebookLM source ingestion from Week_{{WEEK_NUMBER}}_Flashcards.md.
+Produce a CSV formatted for NotebookLM source ingestion from Week_{{WEEK_NUMBER}}_flashcards.md.
 
 CSV format:
 - Header row: Question,Answer,Topic,Difficulty
@@ -242,7 +242,7 @@ CSV format:
 
 ---
 
-### Prompt 5 — Audio Overview Scripts (`Week_XX_Audio_Overview_Scripts.md`)
+### Prompt 5 — Audio Overview Scripts (`week_xx_audio_overview_scripts.md`)
 
 ```
 Write a set of podcast-style audio overview scripts for Week {{WEEK_NUMBER}} — {{WEEK_TOPIC}}.
@@ -262,14 +262,14 @@ For each track include:
 Rules:
 - Each line starts "**H:**" or "**G:**" for TTS-friendly parsing.
 - Do not invent organisations, people, or standards. Only cite what appears in SEH5,
-  ISO 15288, SEBoK, NASA SE Handbook, or other references listed in Week_XX_References.md.
+  ISO 15288, SEBoK, NASA SE Handbook, or other references listed in week_xx_references.md.
 - Keep sentences tight — aim for <25 words each — to be TTS-legible.
-- Match the tone and structure of Week_01_Audio_Overview_Scripts.md.
+- Match the tone and structure of week_01_audio_overview_scripts.md.
 ```
 
 ---
 
-### Prompt 6 — References (`Week_XX_References.md`)
+### Prompt 6 — References (`week_xx_references.md`)
 
 ```
 Compile a tiered reference list for Week {{WEEK_NUMBER}} — {{WEEK_TOPIC}}.
@@ -294,12 +294,12 @@ For each reference include:
 Rules:
 - Only include references that genuinely cover this week's material.
 - Flag any reference that is superseded/withdrawn (e.g. IEEE 1220) clearly.
-- Match the style of Week_01_References.md.
+- Match the style of week_01_references.md.
 ```
 
 ---
 
-### Prompt 7 — Practice Questions (`Week_XX_Practice_Questions.md`)
+### Prompt 7 — Practice Questions (`week_xx_practice_questions.md`)
 
 ```
 Generate 20 CSEP-style multiple-choice practice questions for Week {{WEEK_NUMBER}} —
@@ -327,11 +327,11 @@ Rules:
 
 ---
 
-### Prompt 8 — Mind Map (`Week_XX_Mind_Map.png`)
+### Prompt 8 — Mind Map (`week_xx_mind_map.png`)
 
 **Tool:** NotebookLM "Mind Map" feature, or Whimsical / draw.io fallback.
 
-**NotebookLM prompt (paste into NotebookLM chat after uploading Week_XX_Study_Plan.md and Week_XX_Topic_Summaries.md as sources):**
+**NotebookLM prompt (paste into NotebookLM chat after uploading week_xx_study_plan.md and week_xx_topic_summaries.md as sources):**
 
 ```
 Create a mind map for Week {{WEEK_NUMBER}} of my CSEP study — topic: {{WEEK_TOPIC}}.
@@ -348,21 +348,21 @@ Style: clear, exam-revision oriented, minimum visual clutter, exportable as PNG 
 1920×1080 or higher.
 ```
 
-Export as PNG and save as `Week_XX_Mind_Map.png` in the week's folder.
+Export as PNG and save as `week_xx_mind_map.png` in the week's folder.
 
 ---
 
-### Prompt 9 — Audio Overview (`Week_XX_Audio_Overview.m4a`)
+### Prompt 9 — Audio Overview (`week_xx_audio_overview.m4a`)
 
 **Tool:** NotebookLM "Audio Overview" feature.
 
 **Setup:**
 1. In NotebookLM, create a notebook named `CSEP Week {{WEEK_NUMBER}} — {{WEEK_TOPIC}}`.
 2. Upload these sources:
-   - `Week_XX_Study_Plan.md`
-   - `Week_XX_Topic_Summaries.md`
-   - `Week_XX_Flashcards.md`
-   - `Week_XX_References.md`
+   - `week_xx_study_plan.md`
+   - `week_xx_topic_summaries.md`
+   - `week_xx_flashcards.md`
+   - `week_xx_references.md`
    - Relevant SEH5 chapter PDF (if available)
 3. Click "Audio Overview" → "Customize".
 
@@ -393,7 +393,7 @@ Download the generated audio as `.m4a` and save to the week's folder.
 
 ---
 
-### Prompt 11 — Video Overview (`Week_XX_Video_Overview.mp4`)
+### Prompt 11 — Video Overview (`week_xx_video_overview.mp4`)
 
 **Tool:** NotebookLM "Video Overview" feature (Studio panel → Video Overview).
 
@@ -419,7 +419,7 @@ Structure the video as follows (one slide per beat, use visuals — diagrams, ta
 process flows — wherever the concept benefits from them):
 
 1. Cold open (15–20 sec): state the week's topic and why the exam tests it heavily.
-2. Learning objectives slide (mirrors the objectives in Week_{{WEEK_NUMBER}}_Study_Plan.md).
+2. Learning objectives slide (mirrors the objectives in week_{{WEEK_NUMBER}}_study_plan.md).
 3. For each of the following sub-topics, produce 1–3 slides (definition slide + example
    slide + "exam watch-out" slide if needed): {{KEY_SUBTOPICS}}.
 4. A comparison / distinctions slide for the 3–5 most commonly confused concepts in
@@ -446,18 +446,18 @@ Style:
 **Export & save:**
 - Once the video finishes generating, use NotebookLM's download option (or record the
   output if direct download is unavailable) and save as
-  `Week_XX_Video_Overview.mp4` in the week's folder.
+  `week_xx_video_overview.mp4` in the week's folder.
 - If NotebookLM only produces a shareable link (not a file), add the link to
-  `Week_XX_References.md` under a new "Generated Multimedia" section and leave the
+  `week_xx_references.md` under a new "Generated Multimedia" section and leave the
   `.mp4` checkbox unticked with a note.
 
 ---
 
-### Prompt 10 — Week Assessment Answer Key (`Week_XX_Assessment_Answers.md`)
+### Prompt 10 — Week Assessment Answer Key (`week_xx_assessment_answers.md`)
 
 ```
 Produce a reference answer key for the Day 7 review activities in
-Week_{{WEEK_NUMBER}}_Study_Plan.md.
+week_{{WEEK_NUMBER}}_study_plan.md.
 
 Include:
 - Model answers for every Day 1–6 self-check question (1 short paragraph each, citing
@@ -475,7 +475,7 @@ Rules:
 
 ---
 
-### Prompt 12 — Illustration Diagram Prompts (`Week_XX_Illustration_Diagram_Prompts.md`)
+### Prompt 12 — Illustration Diagram Prompts (`week_xx_illustration_diagram_prompts.md`)
 
 **Purpose:** For every topic summary produced by Prompt 2 that is marked with a non-N/A
 "Suggested Illustration:" block, generate a self-contained image-generation prompt that can
@@ -486,7 +486,7 @@ an AI image generator such as the ones in ChatGPT / Claude / Gemini) to render t
 You are producing a set of diagram-generation prompts for Week {{WEEK_NUMBER}} —
 {{WEEK_TOPIC}} of the CSEP study programme.
 
-Input: Week_{{WEEK_NUMBER}}_Topic_Summaries.md (already produced). Read each summary's
+Input: week_{{WEEK_NUMBER}}_topic_summaries.md (already produced). Read each summary's
 "Suggested Illustration:" block.
 
 For EACH summary whose "Suggested Illustration" is NOT marked "N/A — text only", produce
@@ -494,8 +494,8 @@ one entry in a single Markdown file with this exact structure:
 
 ## Diagram {{N}} — <summary title>
 
-**Linked summary:** Summary N in Week_{{WEEK_NUMBER}}_Topic_Summaries.md
-**Output filename:** `Week_{{WEEK_NUMBER}}_Diagrams/Week_{{WEEK_NUMBER}}_Diagram_{{N}}_<slug>.mmd`
+**Linked summary:** Summary N in week_{{WEEK_NUMBER}}_topic_summaries.md
+**Output filename:** `Week_{{WEEK_NUMBER}}_Diagrams/week_{{WEEK_NUMBER}}_diagram_{{N}}_<slug>.mmd`
 (for Mermaid) or `.svg`/`.png` (for raster tools)
 **Recommended tool:** Mermaid (preferred for process/flow/state), PlantUML (UML), draw.io
 (context/block diagrams), or an AI image generator (conceptual illustrations only — not
@@ -527,7 +527,7 @@ One sentence linking the diagram to the CSEP exam objective it supports.
 ---
 
 Repeat the block above for every eligible summary, numbered 1..N in the same order as the
-summaries appear in Week_{{WEEK_NUMBER}}_Topic_Summaries.md. If the student chooses to
+summaries appear in week_{{WEEK_NUMBER}}_topic_summaries.md. If the student chooses to
 generate a diagram, the rendered file goes into `Week_{{WEEK_NUMBER}}_Diagrams/` using the
 filename specified in that entry.
 
@@ -539,7 +539,7 @@ Rules:
   §6.4.3, the diagram must use exactly the process names from that section.
 - Use UK English on every label.
 - Every diagram prompt must be standalone — no "see Diagram 2" cross-references.
-- Match the style of the most recent Week_XX_Illustration_Diagram_Prompts.md that exists
+- Match the style of the most recent week_xx_illustration_diagram_prompts.md that exists
   in the repo (if none exist yet, establish the template with Week {{WEEK_NUMBER}}).
 ```
 
@@ -560,16 +560,16 @@ Rules:
 When scheduling a weekly content-generation task, follow this sequence (dependencies in
 order — each step feeds the next):
 
-1. **Run Prompt 1** → produces `Week_XX_Study_Plan.md`
-2. **Run Prompt 2** → produces `Week_XX_Topic_Summaries.md` (each summary includes a
+1. **Run Prompt 1** → produces `week_xx_study_plan.md`
+2. **Run Prompt 2** → produces `week_xx_topic_summaries.md` (each summary includes a
    "Suggested Illustration:" block — the input to Prompt 12)
-3. **Run Prompt 3** → produces `Week_XX_Flashcards.md` *(depends on 1 & 2)*
+3. **Run Prompt 3** → produces `week_xx_flashcards.md` *(depends on 1 & 2)*
 4. **Run Prompts 4a & 4b** (in parallel) → produce both CSVs *(depend on 3)*
-5. **Run Prompt 5** → produces `Week_XX_Audio_Overview_Scripts.md` *(depends on 1 & 2)*
-6. **Run Prompt 6** → produces `Week_XX_References.md`
-7. **Run Prompt 7** → produces `Week_XX_Practice_Questions.md` *(depends on 1, 2, 3)*
-8. **Run Prompt 10** → produces `Week_XX_Assessment_Answers.md` *(depends on 1)*
-9. **Run Prompt 12** → produces `Week_XX_Illustration_Diagram_Prompts.md` *(depends on 2)*
+5. **Run Prompt 5** → produces `week_xx_audio_overview_scripts.md` *(depends on 1 & 2)*
+6. **Run Prompt 6** → produces `week_xx_references.md`
+7. **Run Prompt 7** → produces `week_xx_practice_questions.md` *(depends on 1, 2, 3)*
+8. **Run Prompt 10** → produces `week_xx_assessment_answers.md` *(depends on 1)*
+9. **Run Prompt 12** → produces `week_xx_illustration_diagram_prompts.md` *(depends on 2)*
 10. **Manual — Render diagrams:** for each entry in the Illustration Diagram Prompts file,
     render to `Week_XX_Diagrams/` (Mermaid via `mmdc` or mermaid.live; AI images via chosen
     generator). Commit both source (`.mmd`) and rendered (`.svg`/`.png`).

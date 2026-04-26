@@ -1,5 +1,5 @@
 # CSEP Week 3 — Illustration Diagram Prompts: Business/Mission Analysis & Stakeholder Needs
-**Source Summaries:** `Week_03_Topic_Summaries.md`
+**Source Summaries:** `week_03_topic_summaries.md`
 **Target Folder:** `Week_03_Diagrams/`
 **Chapter/Standards Anchor:** INCOSE SEH5 Chapter 3; ISO/IEC/IEEE 15288:2023 §6.4.1 and §6.4.2; ISO/IEC/IEEE 29148:2018
 **Diagrams in this file:** 6 (Summaries 1, 2, 3, 4, 5, 7). Summary 6 is marked "N/A — text only" in the source.
@@ -10,8 +10,8 @@ Each entry below is self-contained. Preferred tool: **Mermaid** (renders nativel
 
 ## Diagram 1 — The Business or Mission Analysis (BMA) Process: Purpose and Position
 
-**Linked summary:** Summary 1 in `Week_03_Topic_Summaries.md`
-**Output filename:** `Week_03_Diagrams/Week_03_Diagram_1_bma_process_position.mmd` (Mermaid) or `.svg` (rendered)
+**Linked summary:** Summary 1 in `week_03_topic_summaries.md`
+**Output filename:** `Week_03_Diagrams/week_03_diagram_1_bma_process_position.mmd` (Mermaid) or `.svg` (rendered)
 **Recommended tool:** Mermaid (process flow)
 **Standards reference:** ISO/IEC/IEEE 15288:2023 §6.4.1 (BMA); §6.4.2 (SN&RD); §6.4.3 (System Requirements Definition); §6.4.4 (Architecture Definition); SEH5 Chapter 3
 
@@ -62,8 +62,8 @@ Reinforces the ISO 15288 Technical Process ordering and answers CSEP questions o
 
 ## Diagram 2 — ConOps vs OpsCon: Two Viewpoints on One Capability
 
-**Linked summary:** Summary 2 in `Week_03_Topic_Summaries.md`
-**Output filename:** `Week_03_Diagrams/Week_03_Diagram_2_conops_vs_opscon.mmd` (Mermaid) or `.svg` (rendered)
+**Linked summary:** Summary 2 in `week_03_topic_summaries.md`
+**Output filename:** `Week_03_Diagrams/week_03_diagram_2_conops_vs_opscon.mmd` (Mermaid) or `.svg` (rendered)
 **Recommended tool:** Mermaid (block diagram with parallel columns)
 **Standards reference:** ISO/IEC/IEEE 29148:2018 §4.2 (ConOps) and §4.3 (OpsCon); SEH5 Chapter 3
 
@@ -123,8 +123,8 @@ The ConOps/OpsCon distinction is a high-yield CSEP topic because candidates rout
 
 ## Diagram 3 — Stakeholder Needs and Requirements Definition (SN&RD) — IPO View
 
-**Linked summary:** Summary 3 in `Week_03_Topic_Summaries.md`
-**Output filename:** `Week_03_Diagrams/Week_03_Diagram_3_snrd_ipo.mmd` (Mermaid) or `.svg` (rendered)
+**Linked summary:** Summary 3 in `week_03_topic_summaries.md`
+**Output filename:** `Week_03_Diagrams/week_03_diagram_3_snrd_ipo.mmd` (Mermaid) or `.svg` (rendered)
 **Recommended tool:** Mermaid (input-process-output diagram)
 **Standards reference:** ISO/IEC/IEEE 15288:2023 §6.4.2 (SN&RD); ISO/IEC/IEEE 29148:2018 §9; SEH5 Chapter 3
 
@@ -188,8 +188,8 @@ Supports CSEP questions on SN&RD inputs, outputs, and the handoff to System Requ
 
 ## Diagram 4 — Stakeholder Power/Interest Matrix
 
-**Linked summary:** Summary 4 in `Week_03_Topic_Summaries.md`
-**Output filename:** `Week_03_Diagrams/Week_03_Diagram_4_stakeholder_power_interest.mmd` (Mermaid) or `.svg` (rendered)
+**Linked summary:** Summary 4 in `week_03_topic_summaries.md`
+**Output filename:** `Week_03_Diagrams/week_03_diagram_4_stakeholder_power_interest.mmd` (Mermaid) or `.svg` (rendered)
 **Recommended tool:** Mermaid quadrantChart (2×2 matrix); AI image generator for hand-drawn-style alternative
 **Standards reference:** SEH5 Chapter 3 (stakeholder analysis — presented as supporting practice, not mandated by ISO 15288)
 
@@ -240,8 +240,8 @@ Reinforces the stakeholder analysis activity in SN&RD (Day 4) and helps candidat
 
 ## Diagram 5 — The Six-Level Requirements Hierarchy
 
-**Linked summary:** Summary 5 in `Week_03_Topic_Summaries.md`
-**Output filename:** `Week_03_Diagrams/Week_03_Diagram_5_requirements_hierarchy.mmd` (Mermaid) or `.svg` (rendered)
+**Linked summary:** Summary 5 in `week_03_topic_summaries.md`
+**Output filename:** `Week_03_Diagrams/week_03_diagram_5_requirements_hierarchy.mmd` (Mermaid) or `.svg` (rendered)
 **Recommended tool:** Mermaid (vertical flowchart)
 **Standards reference:** ISO/IEC/IEEE 15288:2023 §6.4.1, §6.4.2, §6.4.3, §6.4.4, §6.4.5; SEH5 Chapter 3; SEBoK "System Requirements"
 
@@ -301,8 +301,8 @@ The 6-level hierarchy underpins CSEP questions on traceability, derivation, and 
 
 ## Diagram 6 — Validation vs Verification: Parallel Tracks
 
-**Linked summary:** Summary 7 in `Week_03_Topic_Summaries.md`
-**Output filename:** `Week_03_Diagrams/Week_03_Diagram_6_validation_vs_verification.mmd` (Mermaid) or `.svg` (rendered)
+**Linked summary:** Summary 7 in `week_03_topic_summaries.md`
+**Output filename:** `Week_03_Diagrams/week_03_diagram_6_validation_vs_verification.mmd` (Mermaid) or `.svg` (rendered)
 **Recommended tool:** Mermaid (parallel-track flow)
 **Standards reference:** ISO/IEC/IEEE 15288:2023 §3 (definitions), §6.4.9 (Verification), §6.4.11 (Validation); SEH5 Chapter 3
 

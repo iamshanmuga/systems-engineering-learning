@@ -17,6 +17,28 @@ Other rules specific to this project:
 - `CLAUDE.md` (this file) and `README.md` are the two Claude-readable orientation files. Keep them in sync with each other when structural changes happen.
 - The `03_Templates/` folder contains SE document templates (Markdown, DOCX, XLSX, Draw.io). When Shanmuga asks for a new SE artifact, check there first before generating from scratch.
 
+## Git workflow (always follow)
+
+Every time work in this repo touches git, follow this loop:
+
+1. **Branch off `main`.** Never commit directly to `main`. Use a descriptive branch name: `claude/<short-description>` for Claude-driven work, `content/<topic>` for content edits, `fix/<thing>` for fixes.
+2. **Commit on the branch.** Logical, scoped commits with clear messages. Show diffs / summarise before committing if the change is large or destructive.
+3. **Push the branch and open a PR.** Use `gh pr create` with a description that summarises the change, the reasoning, and any follow-ups. The PR is Shanmuga's review surface.
+4. **Wait for Shanmuga to merge the PR.** Do not merge or push to `main` directly.
+5. **After the PR is merged, clean up.** Verify the branch is fully merged into `main` (locally and on `origin`), then delete it both places: `git branch -d <branch>` and `git push origin --delete <branch>`. No stale branches sitting around.
+
+This applies to every git-touching task in this repo, regardless of size.
+
+## Content placement convention (CSEP folder)
+
+Within `01_CSEP-Certification/`, content is split by *purpose*:
+
+- **Chapter folders own durable knowledge.** `CH0X_<Chapter>/` (and the subprocess sub-folders under CH03–CH08) hold topic summaries, flashcards, mind maps, illustration diagrams, audio overview scripts, references — anything that's tied to a specific INCOSE SE Handbook chapter or ISO 15288 process. Files in chapter folders use plain names (`topic_summaries.md`, `flashcards.md`, `references.md`, `Diagrams/<name>.svg`), no `week_xx_` prefix.
+- **Week folders own study cadence.** `Study-Plan/CSEP_Study_Plan/Week_XX/` holds *only* the week-shaped artifacts: `week_xx_study_plan.md` (daily schedule + learning objectives), `week_xx_practice_questions.md`, `week_xx_assessment_answers.md`, `week_xx_notebooklm_steps.md`, and an optional `week_xx_index.md` linking out to that week's chapter content.
+- **`Study-Plan/csep-study-plan.md` (top-level)** is the master schedule + week→chapter mapping. Source of truth for which chapter a given week covers.
+- **`Practice-Exams-and-Quizzes/`** at the CSEP root is reserved for mixed-chapter mock exams. Per-week practice questions stay in their week folder.
+- When generating new content, route by topic: a Week 4 topic summary on Architecture Definition lands in `CH03_Technical-Processes/Architecture-Definition/topic_summaries.md`, not in `Week_04/`.
+
 ## Where things live
 
 - `01_CSEP-Certification/` — CSEP exam prep aligned to INCOSE SE Handbook v5. Contains chapter notes (`CH01_-CH08_`), `Study-Plan/`, `Flashcards/`, `Practice-Exams-and-Quizzes/`, `References-and-Standards/`.

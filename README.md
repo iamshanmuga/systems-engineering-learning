@@ -9,7 +9,7 @@
 
 | Folder | Purpose |
 |--------|---------|
-| [`01_CSEP-Certification/`](./01_CSEP-Certification/) | CSEP exam prep organized by INCOSE SE Handbook v5 chapters |
+| [`01_CSEP-Certification/`](./01_CSEP-Certification/) | CSEP exam prep. Chapter folders (`CH01_-CH08_`) hold durable content (topic summaries, flashcards, references, mind maps, diagrams). `Study-Plan/` holds week-by-week cadence (study plan, practice questions, NotebookLM steps, week index pointing to chapter content). |
 | [`02_SE-Domains/`](./02_SE-Domains/) | Deep-dive study notes for key SE disciplines |
 | [`03_Templates/`](./03_Templates/) | Reusable SE document and diagram templates (MD, DOCX, XLSX, Draw.io) |
 | [`04_Projects/`](./04_Projects/) | Systems Engineering projects — study sandboxes and real-world work |

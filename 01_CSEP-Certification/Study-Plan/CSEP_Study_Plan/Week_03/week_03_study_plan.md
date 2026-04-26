@@ -283,10 +283,10 @@ By the end of Week 3, you should be able to:
 **Estimated Time:** 30 minutes
 
 #### Review Activities
-- [ ] Review all Day 1–6 self-check questions without notes; check answers in `Week_03_Assessment_Answers.md`
+- [ ] Review all Day 1–6 self-check questions without notes; check answers in `week_03_assessment_answers.md`
 - [ ] Re-read any definition tables where you hesitated
 - [ ] Re-attempt any flashcards marked ❌ or 🔄 from earlier in the week
-- [ ] Attempt 10 of the 20 practice questions in `Week_03_Practice_Questions.md`
+- [ ] Attempt 10 of the 20 practice questions in `week_03_practice_questions.md`
 
 #### Brain Dump (write from memory, no notes)
 1. State the purpose of BMA and SN&RD in one sentence each, as per ISO 15288 §6.4.1 and §6.4.2.

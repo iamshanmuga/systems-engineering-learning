@@ -10,35 +10,35 @@
 ```
 CSEP_Study_Plan/
 ├── README.md                          ← This file (project index)
-├── Weekly_Content_Checklist_and_Prompts.md  ← Master checklist + reusable prompts for generating each week's materials
+├── weekly_content_checklist_and_prompts.md  ← Master checklist + reusable prompts for generating each week's materials
 ├── Week_01/
-│   ├── Week_01_Study_Plan.md          ← Daily schedule & learning objectives (7 days)
-│   ├── Week_01_Topic_Summaries.md     ← Concise summaries for all 6 topic areas
-│   ├── Week_01_Flashcards.md          ← 160-card exam-focused flashcard deck
-│   ├── Week_01_Audio_Overview_Scripts.md ← 7 podcast-style audio overview scripts
-│   └── Week_01_References.md          ← Standards, textbooks, and free resources
+│   ├── week_01_study_plan.md          ← Daily schedule & learning objectives (7 days)
+│   ├── week_01_topic_summaries.md     ← Concise summaries for all 6 topic areas
+│   ├── week_01_flashcards.md          ← 160-card exam-focused flashcard deck
+│   ├── week_01_audio_overview_scripts.md ← 7 podcast-style audio overview scripts
+│   └── week_01_references.md          ← Standards, textbooks, and free resources
 ├── Week_02/
-│   ├── Week_02_Study_Plan.md          ← Daily schedule & learning objectives (7 days)
-│   ├── Week_02_Topic_Summaries.md     ← Concise summaries for all 6 topic areas
-│   ├── Week_02_Flashcards.md          ← 55-card exam-focused flashcard deck
-│   ├── Week_02_Flashcards.csv         ← Anki/Quizlet import CSV
-│   ├── Week_02_Flashcards_NotebookLM.csv ← NotebookLM ingestion CSV
-│   ├── Week_02_Audio_Overview_Scripts.md ← 7 podcast-style audio overview scripts
-│   ├── Week_02_References.md          ← Standards, textbooks, and free resources
-│   ├── Week_02_Practice_Questions.md  ← 20 CSEP-style practice MCQs with answer key
-│   ├── Week_02_Assessment_Answers.md  ← Day 1–6 self-check answers & brain dump key
-│   └── Week_02_NotebookLM_Steps.md   ← Manual checklist for mind map, audio & video
+│   ├── week_02_study_plan.md          ← Daily schedule & learning objectives (7 days)
+│   ├── week_02_topic_summaries.md     ← Concise summaries for all 6 topic areas
+│   ├── week_02_flashcards.md          ← 55-card exam-focused flashcard deck
+│   ├── week_02_flashcards.csv         ← Anki/Quizlet import CSV
+│   ├── week_02_flashcards_notebooklm.csv ← NotebookLM ingestion CSV
+│   ├── week_02_audio_overview_scripts.md ← 7 podcast-style audio overview scripts
+│   ├── week_02_references.md          ← Standards, textbooks, and free resources
+│   ├── week_02_practice_questions.md  ← 20 CSEP-style practice MCQs with answer key
+│   ├── week_02_assessment_answers.md  ← Day 1–6 self-check answers & brain dump key
+│   └── week_02_notebooklm_steps.md   ← Manual checklist for mind map, audio & video
 ├── Week_03/                           ← ✅ Complete (CH03 Part 1A: BMA → Stakeholder Needs)
-│   ├── Week_03_Study_Plan.md          ← Daily schedule & learning objectives (7 days)
-│   ├── Week_03_Topic_Summaries.md     ← Concise summaries for all 7 topic areas
-│   ├── Week_03_Flashcards.md          ← 55-card exam-focused flashcard deck
-│   ├── Week_03_Flashcards.csv         ← Anki/Quizlet import CSV
-│   ├── Week_03_Flashcards_NotebookLM.csv ← NotebookLM ingestion CSV
-│   ├── Week_03_Audio_Overview_Scripts.md ← 7 podcast-style audio overview scripts (~45 min)
-│   ├── Week_03_References.md          ← Standards, textbooks, and free resources
-│   ├── Week_03_Practice_Questions.md  ← 20 CSEP-style practice MCQs with answer key
-│   ├── Week_03_Assessment_Answers.md  ← Day 1–6 self-check answers & brain dump key
-│   ├── Week_03_Illustration_Diagram_Prompts.md  ← (New from Week 3 onward) Per-summary image-gen prompts — 6 diagrams
+│   ├── week_03_study_plan.md          ← Daily schedule & learning objectives (7 days)
+│   ├── week_03_topic_summaries.md     ← Concise summaries for all 7 topic areas
+│   ├── week_03_flashcards.md          ← 55-card exam-focused flashcard deck
+│   ├── week_03_flashcards.csv         ← Anki/Quizlet import CSV
+│   ├── week_03_flashcards_notebooklm.csv ← NotebookLM ingestion CSV
+│   ├── week_03_audio_overview_scripts.md ← 7 podcast-style audio overview scripts (~45 min)
+│   ├── week_03_references.md          ← Standards, textbooks, and free resources
+│   ├── week_03_practice_questions.md  ← 20 CSEP-style practice MCQs with answer key
+│   ├── week_03_assessment_answers.md  ← Day 1–6 self-check answers & brain dump key
+│   ├── week_03_illustration_diagram_prompts.md  ← (New from Week 3 onward) Per-summary image-gen prompts — 6 diagrams
 │   └── Week_03_Diagrams/                        ← (New from Week 3 onward) Rendered Mermaid sources (.mmd) + SVG renderings
 │       ├── Week_03_Diagram_1_bma_process_position.{mmd,svg}
 │       ├── Week_03_Diagram_2_conops_vs_opscon.{mmd,svg}
@@ -71,7 +71,7 @@ CSEP_Study_Plan/
 
 ## 📚 Week 1 Contents Summary
 
-### Week_01_Study_Plan.md
+### week_01_study_plan.md
 A day-by-day study schedule (Mon–Sun) covering CH01 — SE Overview & Fundamentals (~4.5 hours total):
 - Day 1: What is Systems Engineering? — INCOSE & ISO/IEC/IEEE 15288 definitions, why SE exists
 - Day 2: Systems — key vocabulary (system, SoI, enabling system, emergence, system boundary)
@@ -81,19 +81,19 @@ A day-by-day study schedule (Mon–Sun) covering CH01 — SE Overview & Fundamen
 - Day 6: SE in practice — stakeholders, common failure modes, ISO 15288 process groups overview
 - Day 7: Review, brain dump & Week 1 self-assessment
 
-### Week_01_Topic_Summaries.md
+### week_01_topic_summaries.md
 Concise topic summaries aligned to each day's content — designed for rapid revision before practice tests.
 
-### Week_01_Flashcards.md
+### week_01_flashcards.md
 57 Q&A flashcards across 3 sections — scoped to CH01 SE Overview & Fundamentals:
 - Section 1 (Cards 1–20): SE Introduction
 - Section 2 (Cards 21–50): Systems Thinking & SE Principles
 - Section 3 (Cards 51–57): SE Context, Stakeholders & Standards Overview
 
-### Week_01_Audio_Overview_Scripts.md
+### week_01_audio_overview_scripts.md
 Seven conversational audio scripts (NotebookLM-style podcast dialogue) — ideal for passive review while commuting, exercising, or cooking. Approx. 45 minutes total runtime.
 
-### Week_01_References.md
+### week_01_references.md
 Tiered reference list including:
 - **Tier 1 (Primary):** ISO 15288:2023, SEH5, ISO 29148:2018, ISO 42010:2022
 - **Tier 2 (Secondary):** NASA SE Handbook, SEBoK, DAU Guidebook
@@ -103,7 +103,7 @@ Tiered reference list including:
 
 ## 📚 Week 3 Contents Summary
 
-### Week_03_Study_Plan.md
+### week_03_study_plan.md
 A day-by-day study schedule (Mon–Sun) covering CH03 Part 1A — Business/Mission Analysis → Stakeholder Needs (~3 hours total):
 - Day 1: Why BMA exists — solution-first trap, enterprise→project bridge, BMA purpose (ISO 15288 §6.4.1)
 - Day 2: Inside BMA — 5 activity clusters, ConOps vs OpsCon (ISO 29148 §4.2 / §4.3), MoEs
@@ -113,31 +113,31 @@ A day-by-day study schedule (Mon–Sun) covering CH03 Part 1A — Business/Missi
 - Day 6: Validation criteria, MoEs/MoPs, baselining, V&V distinction (4 verification methods — TAID)
 - Day 7: Review, brain dump & Week 3 self-assessment
 
-### Week_03_Topic_Summaries.md
+### week_03_topic_summaries.md
 Seven topic summaries (Summary 1–7) covering BMA, ConOps/OpsCon, SN&RD, stakeholders, requirements hierarchy, characteristics & baselining, and validation — each with Suggested Illustration blocks cross-referenced from the Diagram Prompts file.
 
-### Week_03_Flashcards.md
+### week_03_flashcards.md
 55 Q&A flashcards across 3 topic sections (with a finer 6-way day-level slicing for daily drill):
 - **Section 1 — Business or Mission Analysis (Cards 1–17)** — Days 1 & 2 (BMA purpose 1–8 · BMA activities & ConOps/OpsCon 9–17)
 - **Section 2 — Stakeholder Needs & Requirements Definition (Cards 18–41)** — Days 3 & 4 (SN&RD purpose 18–29 · stakeholders & elicitation 30–41)
 - **Section 3 — Requirements Hierarchy, Characteristics & Baselining (Cards 42–55)** — Days 5 & 6 (hierarchy & 9 characteristics 42–51 · MoE/MoP, baselining, V&V 52–55)
 
-### Week_03_Audio_Overview_Scripts.md
+### week_03_audio_overview_scripts.md
 Seven conversational audio scripts (Host & Guest dialogue, NotebookLM-style) — approx. 45 minutes total runtime, matched to the 7 topic summaries.
 
-### Week_03_References.md
+### week_03_references.md
 Tiered reference list scoped to CH03 §6.4.1 and §6.4.2:
 - **Tier 1 (Primary):** ISO 15288:2023 §6.4.1 and §6.4.2, SEH5 Ch3, ISO 29148:2018 §4.2, §4.3, §5.2, §9
 - **Tier 2 (Secondary):** SEBoK, NASA SEH, DAU Guidebook, INCOSE GtWR
 - **Tier 3 (Supplementary):** ISO 24748-1, Robertson Volere, Alexander & Stevens, Kulak & Guiney
 
-### Week_03_Practice_Questions.md
+### week_03_practice_questions.md
 20 CSEP-style MCQs with answer key, rationales, and ISO/SEH5 citations.
 
-### Week_03_Assessment_Answers.md
+### week_03_assessment_answers.md
 Model answers for Day 1–6 self-checks and the Day 7 brain dump, including the 6-level hierarchy table, 5-of-5 competency rubric, Next Steps, and the "NAU CSF VCC" mnemonic for the 9 characteristics.
 
-### Week_03_Illustration_Diagram_Prompts.md (new series starting Week 3)
+### week_03_illustration_diagram_prompts.md (new series starting Week 3)
 Six diagram specifications — each with linked summary, output filename, recommended tool, standards reference, Mermaid source, AI-prompt alternative, MUST-show / MUST-NOT-show items, and exam relevance.
 
 ### Week_03_Diagrams/
