@@ -33,11 +33,11 @@ This applies to every git-touching task in this repo, regardless of size.
 
 Within `01_CSEP-Certification/`, content is split by *purpose*:
 
-- **Chapter folders own durable knowledge.** `CH0X_<Chapter>/` (and the subprocess sub-folders under CH03–CH08) hold topic summaries, flashcards, mind maps, illustration diagrams, audio overview scripts, references — anything that's tied to a specific INCOSE SE Handbook chapter or ISO 15288 process. Files in chapter folders use plain names (`Topic_Summaries.md`, `Flashcards.md`, `References.md`, `Diagrams/<name>.svg`), no `Week_XX_` prefix.
-- **Week folders own study cadence.** `Study-Plan/CSEP_Study_Plan/Week_XX/` holds *only* the week-shaped artifacts: `Week_XX_Study_Plan.md` (daily schedule + learning objectives), `Week_XX_Practice_Questions.md`, `Week_XX_Assessment_Answers.md`, `Week_XX_NotebookLM_Steps.md`, and an optional `Week_XX_Index.md` linking out to that week's chapter content.
-- **`Study-Plan/CSEP-Study-Plan.md` (top-level)** is the master schedule + week→chapter mapping. Source of truth for which chapter a given week covers.
+- **Chapter folders own durable knowledge.** `CH0X_<Chapter>/` (and the subprocess sub-folders under CH03–CH08) hold topic summaries, flashcards, mind maps, illustration diagrams, audio overview scripts, references — anything that's tied to a specific INCOSE SE Handbook chapter or ISO 15288 process. Files in chapter folders use plain names (`topic_summaries.md`, `flashcards.md`, `references.md`, `Diagrams/<name>.svg`), no `week_xx_` prefix.
+- **Week folders own study cadence.** `Study-Plan/CSEP_Study_Plan/Week_XX/` holds *only* the week-shaped artifacts: `week_xx_study_plan.md` (daily schedule + learning objectives), `week_xx_practice_questions.md`, `week_xx_assessment_answers.md`, `week_xx_notebooklm_steps.md`, and an optional `week_xx_index.md` linking out to that week's chapter content.
+- **`Study-Plan/csep-study-plan.md` (top-level)** is the master schedule + week→chapter mapping. Source of truth for which chapter a given week covers.
 - **`Practice-Exams-and-Quizzes/`** at the CSEP root is reserved for mixed-chapter mock exams. Per-week practice questions stay in their week folder.
-- When generating new content, route by topic: a Week 4 topic summary on Architecture Definition lands in `CH03_Technical-Processes/Architecture-Definition/Topic_Summaries.md`, not in `Week_04/`.
+- When generating new content, route by topic: a Week 4 topic summary on Architecture Definition lands in `CH03_Technical-Processes/Architecture-Definition/topic_summaries.md`, not in `Week_04/`.
 
 ## Where things live
 

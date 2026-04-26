@@ -7,9 +7,9 @@
 
 ## Files in this folder (cadence-shaped)
 
-- `Week_03_Study_Plan.md` — daily schedule + learning objectives
-- `Week_03_Practice_Questions.md`
-- `Week_03_Assessment_Answers.md`
+- `week_03_study_plan.md` — daily schedule + learning objectives
+- `week_03_practice_questions.md`
+- `week_03_assessment_answers.md`
 
 (NotebookLM Steps for Week 3 not yet generated — run `/notebooklm Week 03`.)
 
@@ -19,11 +19,11 @@ Filed under [`../../../CH03_Technical-Processes/`](../../../CH03_Technical-Proce
 
 ### `Business-Mission-Analysis/` — primary landing for Week 3 written content
 
-- `Topic_Summaries.md` — covers BMA *and* SN&RD (split planned during exam revision)
-- `Flashcards.md`, `Flashcards.csv`, `Flashcards_NotebookLM.csv`
-- `References.md`
-- `Audio_Overview_Script.md`
-- `Illustration_Diagram_Prompts.md`
+- `topic_summaries.md` — covers BMA *and* SN&RD (split planned during exam revision)
+- `flashcards.md`, `flashcards.csv`, `flashcards_notebooklm.csv`
+- `references.md`
+- `audio_overview_script.md`
+- `illustration_diagram_prompts.md`
 - `Diagrams/bma_process_position.svg`, `Diagrams/conops_vs_opscon.svg`
 
 ### `Stakeholder-Needs-and-Requirements/`

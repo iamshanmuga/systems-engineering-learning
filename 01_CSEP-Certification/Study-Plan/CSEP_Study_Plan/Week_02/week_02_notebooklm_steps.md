@@ -12,16 +12,16 @@
 2. Click **"New notebook"**
 3. Name the notebook: `CSEP Week 02 — Life Cycle Concepts`
 4. Upload the following sources (upload as files or paste as text):
-   - [ ] `Week_02_Study_Plan.md`
-   - [ ] `Week_02_Topic_Summaries.md`
-   - [ ] `Week_02_Flashcards.md`
-   - [ ] `Week_02_References.md`
+   - [ ] `week_02_study_plan.md`
+   - [ ] `week_02_topic_summaries.md`
+   - [ ] `week_02_flashcards.md`
+   - [ ] `week_02_references.md`
    - [ ] SEH5 Chapter 2 PDF (if available — attach if you have the eBook)
 5. Wait for NotebookLM to process all sources (status turns green ✅)
 
 ---
 
-## Deliverable 1 — Mind Map (`Week_02_Mind_Map.png`)
+## Deliverable 1 — Mind Map (`week_02_mind_map.png`)
 
 **Tool:** NotebookLM "Mind Map" feature (or Whimsical / draw.io as fallback)
 
@@ -53,12 +53,12 @@ Style: clear, exam-revision oriented, minimal visual clutter, exportable as PNG 
 
 3. Generate the mind map
 4. Export/download as PNG
-5. Save as `Week_02_Mind_Map.png` in this folder (`Week_02/`)
-6. Tick: - [ ] `Week_02_Mind_Map.png` saved ✅
+5. Save as `week_02_mind_map.png` in this folder (`Week_02/`)
+6. Tick: - [ ] `week_02_mind_map.png` saved ✅
 
 ---
 
-## Deliverable 2 — Audio Overview (`Week_02_Audio_Overview.m4a`)
+## Deliverable 2 — Audio Overview (`week_02_audio_overview.m4a`)
 
 **Tool:** NotebookLM "Audio Overview" feature (Studio panel)
 
@@ -100,14 +100,14 @@ Do not invent references. Cite SEH5 Ch2 and ISO 15288 §6 where specific claims 
 4. Click **Generate**
 5. Listen to a sample to confirm quality
 6. Download as `.m4a`
-7. Save as `Week_02_Audio_Overview.m4a` in this folder (`Week_02/`)
-8. Tick: - [ ] `Week_02_Audio_Overview.m4a` saved ✅
+7. Save as `week_02_audio_overview.m4a` in this folder (`Week_02/`)
+8. Tick: - [ ] `week_02_audio_overview.m4a` saved ✅
 
-> **If download is unavailable:** Note the NotebookLM share link in `Week_02_References.md` under a new "Generated Multimedia" section, and leave the `.m4a` checkbox unticked.
+> **If download is unavailable:** Note the NotebookLM share link in `week_02_references.md` under a new "Generated Multimedia" section, and leave the `.m4a` checkbox unticked.
 
 ---
 
-## Deliverable 3 — Video Overview (`Week_02_Video_Overview.mp4`)
+## Deliverable 3 — Video Overview (`week_02_video_overview.mp4`)
 
 **Tool:** NotebookLM "Video Overview" feature (Studio panel → Video Overview)
 
@@ -125,7 +125,7 @@ Audience: experienced engineer (5+ years) preparing for the INCOSE CSEP exam.
 
 Structure (one slide per beat):
 1. Cold open (15–20 sec): state the week topic and why the exam tests it heavily.
-2. Learning objectives slide (mirrors Week_02_Study_Plan.md objectives).
+2. Learning objectives slide (mirrors week_02_study_plan.md objectives).
 3. For each sub-topic, produce 1–3 slides (definition + example + exam watch-out if needed):
    a. Life Cycle Definition & Purpose — system vs project vs product life cycle
    b. Six ISO 15288 Life Cycle Stages — purpose of each stage
@@ -150,10 +150,10 @@ On-screen text: ≤ 40 words per slide. Narration carries the detail.
 
 6. Click **Generate**
 7. Once complete, download as `.mp4`
-8. Save as `Week_02_Video_Overview.mp4` in this folder (`Week_02/`)
-9. Tick: - [ ] `Week_02_Video_Overview.mp4` saved ✅
+8. Save as `week_02_video_overview.mp4` in this folder (`Week_02/`)
+9. Tick: - [ ] `week_02_video_overview.mp4` saved ✅
 
-> **If download is unavailable:** Note the NotebookLM share link in `Week_02_References.md` under a new "Generated Multimedia" section, and leave the `.mp4` checkbox unticked.
+> **If download is unavailable:** Note the NotebookLM share link in `week_02_references.md` under a new "Generated Multimedia" section, and leave the `.mp4` checkbox unticked.
 
 ---
 
@@ -161,9 +161,9 @@ On-screen text: ≤ 40 words per slide. Narration carries the detail.
 
 Once all three multimedia deliverables are done, complete the following:
 
-- [ ] `Week_02_Mind_Map.png` — saved to `Week_02/`
-- [ ] `Week_02_Audio_Overview.m4a` — saved to `Week_02/` (or link in References if download unavailable)
-- [ ] `Week_02_Video_Overview.mp4` — saved to `Week_02/` (or link in References if download unavailable)
+- [ ] `week_02_mind_map.png` — saved to `Week_02/`
+- [ ] `week_02_audio_overview.m4a` — saved to `Week_02/` (or link in References if download unavailable)
+- [ ] `week_02_video_overview.mp4` — saved to `Week_02/` (or link in References if download unavailable)
 - [ ] Update `01_CSEP-Certification/Study-Plan/CSEP_Study_Plan/README.md` — mark Week 2 row as 🔄 In Progress or ✅ Complete
 - [ ] Git: commit multimedia files to `content/week-02` branch (or open a follow-up PR if the text PR was already merged)
 

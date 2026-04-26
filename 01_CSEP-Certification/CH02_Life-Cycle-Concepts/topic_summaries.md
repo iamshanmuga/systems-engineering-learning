@@ -33,7 +33,7 @@ ISO/IEC/IEEE 15288:2023 defines six life cycle stages. Each stage is characteris
 
 **6. Retirement Stage** — The Retirement Stage takes the system out of service. Activities include decommissioning, safe disposal of hazardous materials, archiving documentation, and — where applicable — knowledge transfer to replacement systems. Failure to plan for retirement in the Concept Stage can result in significant unplanned cost (e.g., nuclear plant decommissioning).
 
-![alt text](The_6_Life_Cycle_Stages.png)
+![alt text](the_6_life_cycle_stages.png)
 
 **CSEP Exam Tip:** The exam frequently asks in which stage a named activity occurs. Memorise the primary purpose of each stage precisely. A common trap: "testing" occurs in both the Development and Production stages but for different reasons — Development testing is for **verification/validation** of the design; Production testing is for **conformance** to the approved configuration.
 
